@@ -1,6 +1,6 @@
-# Covering design C(13,6,3) — two 21-block witnesses and the target-20 structure
+# Covering design C(13,6,3) — two 21-block witnesses and the strengthened target-20 structure
 
-**Estate source:** MSL Pass-3 / witness vault  
+**Estate source:** MSL Pass-3 + final September-2 singular synthesis  
 **Point set:** `{0,1,...,12}`  
 **Status:** exact witnesses + necessary structure; **no 20-block UNSAT certificate is claimed**
 
@@ -15,6 +15,8 @@ The recovered estate contains two independently validated 21-block coverings. Ea
 triples, with zero missing triples.
 
 The September-2 source audit also reported that the two incidence structures are non-isomorphic to one another and were separated from the repository benchmark used in that audit. That is **not** promoted here to a globally exhaustive novelty/classification claim; archive-wide isomorphism classification remains a separate task.
+
+The strongest late synthesis materially improves the original target-20 reduction below: the old `r_x>=8` / 16-excess package is superseded by **`r_x>=9` and only three possible global point-degree multisets**.
 
 ## Witness A — `run20_C13_6_3_cover21`
 
@@ -86,135 +88,130 @@ missing         = 0
 PASS
 ```
 
-## Necessary structure of any hypothetical 20-block cover
+## Strengthened necessary structure of any hypothetical 20-block cover
 
-The campaign's strongest theorem is not another heuristic search. It is a rigid incidence package that every 20-block solution would have to satisfy.
+### Point degree is at least 9
 
-### Pair multiplicity
+Fix a point `x`. Every triple `{x,y,z}` must lie in a block through `x`. Delete `x` from all blocks containing it. The resulting `r_x` five-subsets of the other 12 points cover every pair, hence form a `C(12,5,2)` cover.
 
-Fix a pair `{x,y}`. There are 11 triples containing it:
-
-\[
-\{x,y,z\},\qquad z\ne x,y.
-\]
-
-A 6-block containing the pair contains only four possible third points. If `r_xy` is the number of blocks containing `{x,y}`, then
+Using the exact value
 
 \[
-4r_{xy}\ge11,
+C(12,5,2)=9,
 \]
 
-so
+we obtain
 
 \[
-\boxed{r_{xy}\ge3.}
+\boxed{r_x\ge9\quad\text{for every }x.}
 \]
 
-### Point degree
+This supersedes the older pair-counting lower bound `r_x>=8`.
 
-Let `r_x` be the number of blocks containing point `x`. Counting pair incidences through `x`,
-
-\[
-5r_x=\sum_{y\ne x}r_{xy}.
-\]
-
-Since there are 12 other points and each pair multiplicity is at least 3,
-
-\[
-5r_x\ge36,
-\]
-
-hence
-
-\[
-\boxed{r_x\ge8.}
-\]
-
-### Global excess budget
+### Only three global point-degree multisets survive
 
 Twenty 6-blocks contain exactly
 
 \[
-20\cdot6=120
+\sum_x r_x=20\cdot6=120
 \]
 
-point incidences. The compulsory baseline `r_x>=8` uses
+point incidences. The compulsory baseline is now `13*9=117`, leaving only three excess degree units. Therefore the point-degree multiset must be exactly one of
 
 \[
-13\cdot8=104.
-\]
-
-Therefore any 20-cover must satisfy the exact excess identity
-
-\[
-\boxed{\sum_x(r_x-8)=16.}
-\]
-
-That leaves very little room for irregular point degrees.
-
-### Degree-eight local profiles
-
-If `r_x=8`, then
-
-\[
-\sum_{y\ne x}r_{xy}=40.
-\]
-
-The baseline twelve 3's contributes 36, leaving exactly four excess pair incidences. Thus the multiset
-
-\[
-\{r_{xy}:y\ne x\}
-\]
-
-has exactly one of five forms:
-
-\[
-\boxed{(7,3^{11})},
+\boxed{(12,9^{12})},
 \]
 
 \[
-\boxed{(6,4,3^{10})},
-\]
-
-\[
-\boxed{(5,5,3^{10})},
-\]
-
-\[
-\boxed{(5,4,4,3^9)},
+\boxed{(11,10,9^{11})},
 \]
 
 or
 
 \[
-\boxed{(4,4,4,4,3^8)}.
+\boxed{(10,10,10,9^{10})}.
 \]
 
-This is the local profile constraint encoded by the estate's `Cover20Degree` formal asset.
+In particular, every hypothetical 20-cover has at least **10 degree-9 points**, and each degree-9 point induces an optimal nine-block `C(12,5,2)` neighborhood.
 
-## Exact close program
+### Pair multiplicity is at least 3
 
-A direct target-20 formulation uses one Boolean variable for each of the
+Fix a pair `{x,y}`. There are 11 triples containing it, while a 6-block containing the pair covers only four choices of the third point. Thus
 
 \[
-\binom{13}{6}=1716
+\boxed{r_{xy}\ge3.}
 \]
 
-possible blocks, the 286 triple-cover constraints, and cardinality 20.
+Globally,
 
-The archive's raw MILP attempt did **not** prove infeasibility. Search failure is not a certificate.
+\[
+\sum_{\{x,y\}}r_{xy}=20\binom62=300,
+\]
 
-The correct next close is therefore:
+so
 
-1. compile the pair multiplicity, point-degree, excess-budget and degree-8-profile theorems into the target-20 instance;
-2. add symmetry breaking;
-3. solve by SAT / pseudo-Boolean / certified CP;
-4. if UNSAT, retain a replayable DRAT/LRAT/VeriPB-style proof certificate.
+\[
+\boxed{\sum_{\{x,y\}}(r_{xy}-3)=300-3\binom{13}{2}=66.}
+\]
 
-Only such a certificate (or a mathematical impossibility proof) upgrades this program from a 21-block witness/20-block structural reduction to an exact covering-number determination.
+For an individual point,
+
+\[
+\sum_{y\ne x}(r_{xy}-3)=5r_x-36,
+\]
+
+which is `9,14,19,24` when `r_x=9,10,11,12`, respectively.
+
+### Every degree-9 point has at least three multiplicity-3 neighbors
+
+If `r_x=9`, then
+
+\[
+\sum_{y\ne x}r_{xy}=45.
+\]
+
+Write `e_y=r_xy-3>=0`. The twelve integers `e_y` sum to 9, so at most nine are positive. Therefore at least three vanish:
+
+\[
+\boxed{r_x=9\Longrightarrow \#\{y:r_{xy}=3\}\ge3.}
+\]
+
+Consequently the three global degree patterns force at least 18, 17, or 15 distinct multiplicity-3 pairs, respectively (count degree-9 endpoints and divide by at most two per pair).
+
+### Exact local geometry around a multiplicity-3 pair
+
+Take `{x,y}` with `r_xy=3`. Delete `x,y` from the three blocks containing the pair. We obtain three 4-subsets of the remaining 11 points whose union must be all 11 points.
+
+Those sets carry 12 incidences on 11 points. Hence exactly one point occurs twice and the other ten occur once. Equivalently:
+
+\[
+\boxed{\text{exactly one pair of the three 4-subsets intersects in one point; the other two pairwise intersections are empty.}}
+\]
+
+So among the original three 6-blocks through `{x,y}`, exactly two share one additional point `z`, while the third shares no point beyond `{x,y}` with either of those two.
+
+## Correct exact-close program
+
+The public frontier represented by this archive remains
+
+\[
+20\le C(13,6,3)\le21.
+\]
+
+A certified target-20 impossibility proof immediately closes the value at 21. The strengthened search should therefore:
+
+1. anchor a degree-9 point (every global pattern has at least ten);
+2. enumerate/classify optimal nine-block `C(12,5,2)` neighborhoods up to isomorphism;
+3. lift those nine local blocks to the nine 6-blocks containing the anchor;
+4. choose only eleven further blocks not containing it;
+5. branch on the three global degree multisets;
+6. enforce pair multiplicity, exact degree budgets, and the degree-9 excess equation;
+7. branch early on guaranteed multiplicity-3 pairs and their exact three-block intersection template;
+8. quotient by the automorphism group of the anchored neighborhood;
+9. emit a replayable UNSAT certificate or independently checkable exhaustive log.
+
+The archive's earlier raw MILP attempt did **not** prove infeasibility. Search failure is not a certificate. Until target 20 is actually eliminated, **`C(13,6,3)=21` is not claimed**.
 
 ## Reproducibility
 
-The two block lists above are sufficient for independent checking: enumerate every 3-subset of `{0,...,12}` and verify that at least one displayed block contains it.
-
-No appeal to the original search procedure is needed to verify the two upper-bound witnesses.
+The two block lists above are sufficient for independent checking of the upper bound: enumerate every 3-subset of `{0,...,12}` and verify that at least one displayed block contains it. No appeal to the original search procedure is needed.
