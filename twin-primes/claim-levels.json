@@ -1,0 +1,5 @@
+{
+  "claim": "The level of distribution of primes in arithmetic progressions exceeds one half: Bombieri-Vinogradov at one half, Bombieri-Friedlander-Iwaniec at four sevenths for fixed residues, Zhang and Polymath8 beyond one half for smooth moduli, and Maynard at three fifths for almost all residues",
+  "domain": "analytic number theory",
+  "entities": ["level of distribution", "Elliott-Halberstam conjecture", "Bombieri-Vinogradov theorem", "primes in arithmetic progressions to large moduli", "well-factorable moduli", "smooth moduli", "Kloosterman sums", "dispersion method"]
+}

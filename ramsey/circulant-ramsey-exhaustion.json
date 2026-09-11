@@ -1,0 +1,34 @@
+{
+  "claim": "no circulant graph on n vertices witnesses R(k,l) > n, for the cases below",
+  "method": "exhaustive enumeration of connection sets, adjacency built from the definition, cliques and independent sets decided exactly by branch and bound",
+  "results": [
+    {
+      "k": 3,
+      "l": 10,
+      "n": 40,
+      "familySize": 1048575,
+      "tested": 1048575,
+      "witnesses": 0,
+      "complete": true,
+      "sampleWitness": null
+    },
+    {
+      "k": 4,
+      "l": 6,
+      "n": 36,
+      "familySize": 262143,
+      "tested": 262143,
+      "witnesses": 0,
+      "complete": true,
+      "sampleWitness": null
+    }
+  ],
+  "negativeControl": {
+    "R(3,3) n=5 witnesses": 2,
+    "R(3,3) n=6 witnesses": 0,
+    "meaning": "the checker demonstrably ACCEPTS on 5 and REJECTS on 6"
+  },
+  "scope": "ONE construction family at ONE order. NOT a determination of R(k,l), and NOT evidence that no non-circulant witness exists.",
+  "verdict": "PASS",
+  "failures": []
+}

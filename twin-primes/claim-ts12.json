@@ -1,0 +1,5 @@
+{
+  "claim": "Type I and Type II bilinear bounds obtained from the Vaughan/Heath-Brown combinatorial identity for the von Mangoldt function, with Type I level of distribution exceeding one half over unrestricted moduli, yield the Hardy-Littlewood asymptotic for twin primes",
+  "domain": "analytic number theory",
+  "entities": ["Vaughan identity", "Heath-Brown identity", "von Mangoldt function", "level of distribution", "twin primes", "Type II bilinear sums", "parity problem", "asymptotic sieve"]
+}

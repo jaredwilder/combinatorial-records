@@ -1,0 +1,757 @@
+{
+ "monotonicity": {
+  "holds": true,
+  "vPairs": 43,
+  "vViolations": 0,
+  "tPairs": 39,
+  "tViolations": 0
+ },
+ "informative": [],
+ "dominatedBySchoenheim": [
+  {
+   "target": "covering:7,4,2",
+   "lower": 3,
+   "upper": 6,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:7,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:8,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 14,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:8,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:8,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 18,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 25,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 26,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 6,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:9,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,3,2",
+   "lower": 12,
+   "upper": 35,
+   "schoenheim": 17,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 8,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 30,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 6,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 14,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 50,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 19,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,7,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 5,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:10,7,4",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 9,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,3,2",
+   "lower": 12,
+   "upper": 35,
+   "schoenheim": 19,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 47,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 18,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 66,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,6,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 26,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,7,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,7,4",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:11,8,4",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,3,2",
+   "lower": 12,
+   "upper": 35,
+   "schoenheim": 24,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 12,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 57,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 8,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 27,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 113,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,6,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 6,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 14,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 36,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,7,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,7,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,7,4",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 19,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,8,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 6,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:12,8,4",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 11,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,3,2",
+   "lower": 12,
+   "upper": 35,
+   "schoenheim": 26,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 13,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 78,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 8,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 32,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 149,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,6,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 18,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 59,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,7,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,7,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 12,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,7,4",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 26,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,8,2",
+   "lower": 3,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,8,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:13,8,4",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 12,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,3,2",
+   "lower": 12,
+   "upper": 35,
+   "schoenheim": 33,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 18,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 91,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 12,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 37,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 219,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,6,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 19,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 75,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,7,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 6,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,7,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 14,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,7,4",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 36,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,8,2",
+   "lower": 3,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,8,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:14,8,4",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 21,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,4,2",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 19,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,4,3",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 124,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,5,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 12,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,5,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 54,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,5,4",
+   "lower": 9,
+   "upper": null,
+   "schoenheim": 273,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,6,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 8,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,6,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 30,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,6,4",
+   "lower": 7,
+   "upper": null,
+   "schoenheim": 93,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,7,2",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 7,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,7,3",
+   "lower": 4,
+   "upper": null,
+   "schoenheim": 15,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,7,4",
+   "lower": 6,
+   "upper": null,
+   "schoenheim": 41,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,8,2",
+   "lower": 3,
+   "upper": null,
+   "schoenheim": 4,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,8,3",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 12,
+   "beatsSchoenheim": false,
+   "exact": false
+  },
+  {
+   "target": "covering:15,8,4",
+   "lower": 5,
+   "upper": null,
+   "schoenheim": 27,
+   "beatsSchoenheim": false,
+   "exact": false
+  }
+ ],
+ "exactByPinch": [],
+ "unconstrained": 0,
+ "summary": {
+  "targets": 135,
+  "informative": 0,
+  "dominatedBySchoenheim": 92,
+  "exactByPinch": 0,
+  "unconstrained": 0
+ }
+}

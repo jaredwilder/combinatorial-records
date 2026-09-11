@@ -1,0 +1,677 @@
+{"v": 5, "k": 3, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,3,2) <= 4", "verified": true, "result": "C(5,3,2) = 4"}
+{"v": 5, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(5,4,2) <= 3", "verified": true, "result": "C(5,4,2) = 3"}
+{"v": 5, "k": 4, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,4,3) <= 4", "verified": true, "result": "C(5,4,3) = 4"}
+{"v": 6, "k": 3, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,3,2) <= 6", "verified": true, "result": "C(6,3,2) = 6"}
+{"v": 6, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,4,2) <= 3", "verified": true, "result": "C(6,4,2) = 3"}
+{"v": 6, "k": 4, "t": 3, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,4,3) <= 6", "verified": true, "result": "C(6,4,3) = 6"}
+{"v": 6, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,5,2) <= 3", "verified": true, "result": "C(6,5,2) = 3"}
+{"v": 6, "k": 5, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(6,5,3) <= 4", "verified": true, "result": "C(6,5,3) = 4"}
+{"v": 6, "k": 5, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(6,5,4) <= 5", "verified": true, "result": "C(6,5,4) = 5"}
+{"v": 7, "k": 3, "t": 2, "schoenheim": 7, "status": "SAT", "conclusion": "C(7,3,2) <= 7", "verified": true, "result": "C(7,3,2) = 7"}
+{"v": 7, "k": 4, "t": 2, "schoenheim": 4, "status": "UNSAT", "conclusion": "C(7,4,2) >= 5", "verified": null, "result": "C(7,4,2) >= 5  (Schoenheim gives only 4)"}
+{"v": 7, "k": 4, "t": 3, "schoenheim": 11, "status": "UNSAT", "conclusion": "C(7,4,3) >= 12", "verified": null, "result": "C(7,4,3) >= 12  (Schoenheim gives only 11)"}
+{"v": 7, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,5,2) <= 3", "verified": true, "result": "C(7,5,2) = 3"}
+{"v": 7, "k": 5, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,5,3) <= 5", "verified": true, "result": "C(7,5,3) = 5"}
+{"v": 7, "k": 5, "t": 4, "schoenheim": 9, "status": "SAT", "conclusion": "C(7,5,4) <= 9", "verified": true, "result": "C(7,5,4) = 9"}
+{"v": 7, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,6,2) <= 3", "verified": true, "result": "C(7,6,2) = 3"}
+{"v": 7, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(7,6,3) <= 4", "verified": true, "result": "C(7,6,3) = 4"}
+{"v": 7, "k": 6, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,6,4) <= 5", "verified": true, "result": "C(7,6,4) = 5"}
+{"v": 7, "k": 6, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(7,6,5) <= 6", "verified": true, "result": "C(7,6,5) = 6"}
+{"v": 8, "k": 3, "t": 2, "schoenheim": 11, "status": "SAT", "conclusion": "C(8,3,2) <= 11", "verified": true, "result": "C(8,3,2) = 11"}
+{"v": 8, "k": 4, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,4,2) <= 6", "verified": true, "result": "C(8,4,2) = 6"}
+{"v": 8, "k": 4, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,5,2) <= 4", "verified": true, "result": "C(8,5,2) = 4"}
+{"v": 8, "k": 5, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 4, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,6,2) <= 3", "verified": true, "result": "C(8,6,2) = 3"}
+{"v": 8, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,6,3) <= 4", "verified": true, "result": "C(8,6,3) = 4"}
+{"v": 8, "k": 6, "t": 4, "schoenheim": 7, "status": "SAT", "conclusion": "C(8,6,4) <= 7", "verified": true, "result": "C(8,6,4) = 7"}
+{"v": 8, "k": 6, "t": 5, "schoenheim": 12, "status": "SAT", "conclusion": "C(8,6,5) <= 12", "verified": true, "result": "C(8,6,5) = 12"}
+{"v": 8, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,7,2) <= 3", "verified": true, "result": "C(8,7,2) = 3"}
+{"v": 8, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,7,3) <= 4", "verified": true, "result": "C(8,7,3) = 4"}
+{"v": 8, "k": 7, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(8,7,4) <= 5", "verified": true, "result": "C(8,7,4) = 5"}
+{"v": 8, "k": 7, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,7,5) <= 6", "verified": true, "result": "C(8,7,5) = 6"}
+{"v": 9, "k": 3, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 3, "schoenheim": 25, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,6,2) <= 3", "verified": true, "result": "C(9,6,2) = 3"}
+{"v": 9, "k": 6, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 5, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,7,2) <= 3", "verified": true, "result": "C(9,7,2) = 3"}
+{"v": 9, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,7,3) <= 4", "verified": true, "result": "C(9,7,3) = 4"}
+{"v": 9, "k": 7, "t": 4, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,7,4) <= 6", "verified": true, "result": "C(9,7,4) = 6"}
+{"v": 9, "k": 7, "t": 5, "schoenheim": 9, "status": "SAT", "conclusion": "C(9,7,5) <= 9", "verified": true, "result": "C(9,7,5) = 9"}
+{"v": 9, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,8,2) <= 3", "verified": true, "result": "C(9,8,2) = 3"}
+{"v": 9, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,8,3) <= 4", "verified": true, "result": "C(9,8,3) = 4"}
+{"v": 9, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(9,8,4) <= 5", "verified": true, "result": "C(9,8,4) = 5"}
+{"v": 9, "k": 8, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,8,5) <= 6", "verified": true, "result": "C(9,8,5) = 6"}
+{"v": 10, "k": 3, "t": 2, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 3, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 4, "schoenheim": 50, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,6,2) <= 4", "verified": true, "result": "C(10,6,2) = 4"}
+{"v": 10, "k": 6, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 4, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 5, "schoenheim": 44, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,7,2) <= 3", "verified": true, "result": "C(10,7,2) = 3"}
+{"v": 10, "k": 7, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 4, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 5, "schoenheim": 16, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,8,2) <= 3", "verified": true, "result": "C(10,8,2) = 3"}
+{"v": 10, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,8,3) <= 4", "verified": true, "result": "C(10,8,3) = 4"}
+{"v": 10, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,8,4) <= 5", "verified": true, "result": "C(10,8,4) = 5"}
+{"v": 10, "k": 8, "t": 5, "schoenheim": 8, "status": "SAT", "conclusion": "C(10,8,5) <= 8", "verified": true, "result": "C(10,8,5) = 8"}
+{"v": 10, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,9,2) <= 3", "verified": true, "result": "C(10,9,2) = 3"}
+{"v": 10, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,9,3) <= 4", "verified": true, "result": "C(10,9,3) = 4"}
+{"v": 10, "k": 9, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,9,4) <= 5", "verified": true, "result": "C(10,9,4) = 5"}
+{"v": 10, "k": 9, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(10,9,5) <= 6", "verified": true, "result": "C(10,9,5) = 6"}
+{"v": 11, "k": 3, "t": 2, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 4, "t": 2, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 4, "t": 3, "schoenheim": 47, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 5, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 5, "t": 3, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 5, "t": 4, "schoenheim": 66, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 6, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 6, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 6, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 6, "t": 5, "schoenheim": 92, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 7, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(11,7,2) <= 4", "verified": true, "result": "C(11,7,2) = 4"}
+{"v": 11, "k": 7, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 7, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 7, "t": 5, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(11,8,2) <= 3", "verified": true, "result": "C(11,8,2) = 3"}
+{"v": 11, "k": 8, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(11,8,3) <= 5", "verified": true, "result": "C(11,8,3) = 5"}
+{"v": 11, "k": 8, "t": 4, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 8, "t": 5, "schoenheim": 13, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 11, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(11,9,2) <= 3", "verified": true, "result": "C(11,9,2) = 3"}
+{"v": 11, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(11,9,3) <= 4", "verified": true, "result": "C(11,9,3) = 4"}
+{"v": 11, "k": 9, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(11,9,4) <= 5", "verified": true, "result": "C(11,9,4) = 5"}
+{"v": 11, "k": 9, "t": 5, "schoenheim": 7, "status": "SAT", "conclusion": "C(11,9,5) <= 7", "verified": true, "result": "C(11,9,5) = 7"}
+{"v": 11, "k": 10, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(11,10,2) <= 3", "verified": true, "result": "C(11,10,2) = 3"}
+{"v": 11, "k": 10, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(11,10,3) <= 4", "verified": true, "result": "C(11,10,3) = 4"}
+{"v": 11, "k": 10, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(11,10,4) <= 5", "verified": true, "result": "C(11,10,4) = 5"}
+{"v": 11, "k": 10, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(11,10,5) <= 6", "verified": true, "result": "C(11,10,5) = 6"}
+{"v": 12, "k": 3, "t": 2, "schoenheim": 24, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 4, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 4, "t": 3, "schoenheim": 57, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 5, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 5, "t": 3, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 5, "t": 4, "schoenheim": 113, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 6, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 6, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 6, "t": 4, "schoenheim": 36, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 6, "t": 5, "schoenheim": 132, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 7, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 7, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 7, "t": 4, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 7, "t": 5, "schoenheim": 45, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(12,8,2) <= 3", "verified": true, "result": "C(12,8,2) = 3"}
+{"v": 12, "k": 8, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 8, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 8, "t": 5, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(12,9,2) <= 3", "verified": true, "result": "C(12,9,2) = 3"}
+{"v": 12, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(12,9,3) <= 4", "verified": true, "result": "C(12,9,3) = 4"}
+{"v": 12, "k": 9, "t": 4, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 9, "t": 5, "schoenheim": 10, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 12, "k": 10, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(12,10,2) <= 3", "verified": true, "result": "C(12,10,2) = 3"}
+{"v": 12, "k": 10, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(12,10,3) <= 4", "verified": true, "result": "C(12,10,3) = 4"}
+{"v": 12, "k": 10, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(12,10,4) <= 5", "verified": true, "result": "C(12,10,4) = 5"}
+{"v": 12, "k": 10, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(12,10,5) <= 6", "verified": true, "result": "C(12,10,5) = 6"}
+{"v": 13, "k": 3, "t": 2, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 4, "t": 2, "schoenheim": 13, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 4, "t": 3, "schoenheim": 78, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 5, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 5, "t": 3, "schoenheim": 32, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 5, "t": 4, "schoenheim": 149, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 6, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 6, "t": 3, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 6, "t": 4, "schoenheim": 59, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 6, "t": 5, "schoenheim": 245, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 7, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 7, "t": 3, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 7, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 7, "t": 5, "schoenheim": 67, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 8, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 8, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 8, "t": 4, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 8, "t": 5, "schoenheim": 31, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(13,9,2) <= 3", "verified": true, "result": "C(13,9,2) = 3"}
+{"v": 13, "k": 9, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 9, "t": 4, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 9, "t": 5, "schoenheim": 16, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 10, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(13,10,2) <= 3", "verified": true, "result": "C(13,10,2) = 3"}
+{"v": 13, "k": 10, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(13,10,3) <= 4", "verified": true, "result": "C(13,10,3) = 4"}
+{"v": 13, "k": 10, "t": 4, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 13, "k": 10, "t": 5, "schoenheim": 10, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 3, "t": 2, "schoenheim": 33, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 4, "t": 2, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 4, "t": 3, "schoenheim": 91, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 5, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 5, "t": 3, "schoenheim": 37, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 5, "t": 4, "schoenheim": 219, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 6, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 6, "t": 3, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 6, "t": 4, "schoenheim": 75, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 6, "t": 5, "schoenheim": 348, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 7, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 7, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 7, "t": 4, "schoenheim": 36, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 7, "t": 5, "schoenheim": 118, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 8, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 8, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 8, "t": 4, "schoenheim": 21, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 8, "t": 5, "schoenheim": 46, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 9, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 9, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 9, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 9, "t": 5, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 10, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(14,10,2) <= 3", "verified": true, "result": "C(14,10,2) = 3"}
+{"v": 14, "k": 10, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 10, "t": 4, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 14, "k": 10, "t": 5, "schoenheim": 13, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 3, "t": 2, "schoenheim": 35, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 4, "t": 2, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 4, "t": 3, "schoenheim": 124, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 5, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 5, "t": 3, "schoenheim": 54, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 5, "t": 4, "schoenheim": 273, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 6, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 6, "t": 3, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 6, "t": 4, "schoenheim": 93, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 6, "t": 5, "schoenheim": 548, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 7, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 7, "t": 3, "schoenheim": 15, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 7, "t": 4, "schoenheim": 41, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 7, "t": 5, "schoenheim": 161, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 8, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 8, "t": 3, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 8, "t": 4, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 8, "t": 5, "schoenheim": 68, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 9, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 9, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 9, "t": 4, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 9, "t": 5, "schoenheim": 35, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 10, "t": 2, "schoenheim": 3, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 10, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 10, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 15, "k": 10, "t": 5, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 3, "t": 2, "schoenheim": 43, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 4, "t": 2, "schoenheim": 20, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 4, "t": 3, "schoenheim": 140, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 5, "t": 2, "schoenheim": 13, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 5, "t": 3, "schoenheim": 61, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 5, "t": 4, "schoenheim": 397, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 6, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 6, "t": 3, "schoenheim": 32, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 6, "t": 4, "schoenheim": 144, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 6, "t": 5, "schoenheim": 728, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 7, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 7, "t": 3, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 7, "t": 4, "schoenheim": 69, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 7, "t": 5, "schoenheim": 213, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 8, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 8, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 8, "t": 4, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 8, "t": 5, "schoenheim": 82, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 9, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 9, "t": 3, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 9, "t": 4, "schoenheim": 22, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 9, "t": 5, "schoenheim": 48, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 10, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 10, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 10, "t": 4, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 16, "k": 10, "t": 5, "schoenheim": 20, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 3, "t": 2, "schoenheim": 46, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 4, "t": 2, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 4, "t": 3, "schoenheim": 183, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 5, "t": 2, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 5, "t": 3, "schoenheim": 68, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 5, "t": 4, "schoenheim": 476, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 6, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 6, "t": 3, "schoenheim": 37, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 6, "t": 4, "schoenheim": 173, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 6, "t": 5, "schoenheim": 1125, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 7, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 7, "t": 3, "schoenheim": 20, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 7, "t": 4, "schoenheim": 78, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 7, "t": 5, "schoenheim": 350, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 8, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 8, "t": 3, "schoenheim": 15, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 8, "t": 4, "schoenheim": 41, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 8, "t": 5, "schoenheim": 147, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 9, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 9, "t": 3, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 9, "t": 4, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 9, "t": 5, "schoenheim": 57, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 10, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 10, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 10, "t": 4, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 17, "k": 10, "t": 5, "schoenheim": 38, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 3, "t": 2, "schoenheim": 54, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 4, "t": 2, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 4, "t": 3, "schoenheim": 207, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 5, "t": 2, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 5, "t": 3, "schoenheim": 94, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 5, "t": 4, "schoenheim": 659, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 6, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 6, "t": 3, "schoenheim": 42, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 6, "t": 4, "schoenheim": 204, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 6, "t": 5, "schoenheim": 1428, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 7, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 7, "t": 3, "schoenheim": 31, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 7, "t": 4, "schoenheim": 96, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 7, "t": 5, "schoenheim": 445, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 8, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 8, "t": 3, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 8, "t": 4, "schoenheim": 45, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 8, "t": 5, "schoenheim": 176, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 9, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 9, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 9, "t": 4, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 9, "t": 5, "schoenheim": 82, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 10, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 10, "t": 3, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 10, "t": 4, "schoenheim": 22, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 18, "k": 10, "t": 5, "schoenheim": 49, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 3, "t": 2, "schoenheim": 57, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 4, "t": 2, "schoenheim": 29, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 4, "t": 3, "schoenheim": 257, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 5, "t": 2, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 5, "t": 3, "schoenheim": 103, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 5, "t": 4, "schoenheim": 787, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 6, "t": 2, "schoenheim": 13, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 6, "t": 3, "schoenheim": 57, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 6, "t": 4, "schoenheim": 298, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 6, "t": 5, "schoenheim": 2087, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 7, "t": 2, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 7, "t": 3, "schoenheim": 33, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 7, "t": 4, "schoenheim": 114, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 7, "t": 5, "schoenheim": 554, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 8, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 8, "t": 3, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 8, "t": 4, "schoenheim": 74, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 8, "t": 5, "schoenheim": 228, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 9, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 9, "t": 3, "schoenheim": 15, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 9, "t": 4, "schoenheim": 38, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 9, "t": 5, "schoenheim": 95, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 10, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 10, "t": 3, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 10, "t": 4, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 19, "k": 10, "t": 5, "schoenheim": 57, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 3, "t": 2, "schoenheim": 67, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 4, "t": 2, "schoenheim": 35, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 4, "t": 3, "schoenheim": 285, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 5, "t": 2, "schoenheim": 20, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 5, "t": 3, "schoenheim": 116, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 5, "t": 4, "schoenheim": 1028, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 6, "t": 2, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 6, "t": 3, "schoenheim": 64, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 6, "t": 4, "schoenheim": 344, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 6, "t": 5, "schoenheim": 2624, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 5, "k": 3, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,3,2) <= 4", "verified": true, "result": "C(5,3,2) = 4"}
+{"v": 5, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(5,4,2) <= 3", "verified": true, "result": "C(5,4,2) = 3"}
+{"v": 5, "k": 4, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,4,3) <= 4", "verified": true, "result": "C(5,4,3) = 4"}
+{"v": 6, "k": 3, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,3,2) <= 6", "verified": true, "result": "C(6,3,2) = 6"}
+{"v": 6, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,4,2) <= 3", "verified": true, "result": "C(6,4,2) = 3"}
+{"v": 6, "k": 4, "t": 3, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,4,3) <= 6", "verified": true, "result": "C(6,4,3) = 6"}
+{"v": 6, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,5,2) <= 3", "verified": true, "result": "C(6,5,2) = 3"}
+{"v": 6, "k": 5, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(6,5,3) <= 4", "verified": true, "result": "C(6,5,3) = 4"}
+{"v": 6, "k": 5, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(6,5,4) <= 5", "verified": true, "result": "C(6,5,4) = 5"}
+{"v": 7, "k": 3, "t": 2, "schoenheim": 7, "status": "SAT", "conclusion": "C(7,3,2) <= 7", "verified": true, "result": "C(7,3,2) = 7"}
+{"v": 7, "k": 4, "t": 2, "schoenheim": 4, "status": "UNSAT", "conclusion": "C(7,4,2) >= 5", "verified": null, "result": "C(7,4,2) >= 5  (Schoenheim gives only 4)"}
+{"v": 7, "k": 4, "t": 3, "schoenheim": 11, "status": "UNSAT", "conclusion": "C(7,4,3) >= 12", "verified": null, "result": "C(7,4,3) >= 12  (Schoenheim gives only 11)"}
+{"v": 7, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,5,2) <= 3", "verified": true, "result": "C(7,5,2) = 3"}
+{"v": 7, "k": 5, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,5,3) <= 5", "verified": true, "result": "C(7,5,3) = 5"}
+{"v": 7, "k": 5, "t": 4, "schoenheim": 9, "status": "SAT", "conclusion": "C(7,5,4) <= 9", "verified": true, "result": "C(7,5,4) = 9"}
+{"v": 7, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,6,2) <= 3", "verified": true, "result": "C(7,6,2) = 3"}
+{"v": 7, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(7,6,3) <= 4", "verified": true, "result": "C(7,6,3) = 4"}
+{"v": 7, "k": 6, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,6,4) <= 5", "verified": true, "result": "C(7,6,4) = 5"}
+{"v": 7, "k": 6, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(7,6,5) <= 6", "verified": true, "result": "C(7,6,5) = 6"}
+{"v": 8, "k": 3, "t": 2, "schoenheim": 11, "status": "SAT", "conclusion": "C(8,3,2) <= 11", "verified": true, "result": "C(8,3,2) = 11"}
+{"v": 8, "k": 4, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,4,2) <= 6", "verified": true, "result": "C(8,4,2) = 6"}
+{"v": 20, "k": 7, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 4, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,5,2) <= 4", "verified": true, "result": "C(8,5,2) = 4"}
+{"v": 8, "k": 5, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 7, "t": 3, "schoenheim": 38, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 4, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,6,2) <= 3", "verified": true, "result": "C(8,6,2) = 3"}
+{"v": 8, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,6,3) <= 4", "verified": true, "result": "C(8,6,3) = 4"}
+{"v": 8, "k": 6, "t": 4, "schoenheim": 7, "status": "SAT", "conclusion": "C(8,6,4) <= 7", "verified": true, "result": "C(8,6,4) = 7"}
+{"v": 8, "k": 6, "t": 5, "schoenheim": 12, "status": "SAT", "conclusion": "C(8,6,5) <= 12", "verified": true, "result": "C(8,6,5) = 12"}
+{"v": 8, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,7,2) <= 3", "verified": true, "result": "C(8,7,2) = 3"}
+{"v": 8, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,7,3) <= 4", "verified": true, "result": "C(8,7,3) = 4"}
+{"v": 8, "k": 7, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(8,7,4) <= 5", "verified": true, "result": "C(8,7,4) = 5"}
+{"v": 8, "k": 7, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,7,5) <= 6", "verified": true, "result": "C(8,7,5) = 6"}
+{"v": 9, "k": 3, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 7, "t": 4, "schoenheim": 163, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 20, "k": 7, "t": 5, "schoenheim": 852, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 3, "schoenheim": 25, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 3, "t": 2, "schoenheim": 70, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 4, "t": 2, "schoenheim": 37, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 4, "t": 3, "schoenheim": 352, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,6,2) <= 3", "verified": true, "result": "C(9,6,2) = 3"}
+{"v": 21, "k": 5, "t": 2, "schoenheim": 21, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 5, "t": 3, "schoenheim": 147, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 5, "t": 4, "schoenheim": 1197, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 6, "t": 2, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 6, "t": 3, "schoenheim": 70, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 6, "t": 4, "schoenheim": 406, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 6, "t": 5, "schoenheim": 3598, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 7, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 7, "t": 3, "schoenheim": 42, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 7, "t": 4, "schoenheim": 192, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 21, "k": 7, "t": 5, "schoenheim": 1032, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 3, "t": 2, "schoenheim": 81, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 4, "t": 2, "schoenheim": 39, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 4, "t": 3, "schoenheim": 385, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 5, "t": 2, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 5, "t": 3, "schoenheim": 163, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 5, "t": 4, "schoenheim": 1549, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 6, "t": 2, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 6, "t": 3, "schoenheim": 77, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 6, "t": 4, "schoenheim": 539, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 22, "k": 6, "t": 5, "schoenheim": 4389, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 5, "k": 3, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,3,2) <= 4", "verified": true, "result": "C(5,3,2) = 4"}
+{"v": 5, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(5,4,2) <= 3", "verified": true, "result": "C(5,4,2) = 3"}
+{"v": 5, "k": 4, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,4,3) <= 4", "verified": true, "result": "C(5,4,3) = 4"}
+{"v": 6, "k": 3, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,3,2) <= 6", "verified": true, "result": "C(6,3,2) = 6"}
+{"v": 6, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,4,2) <= 3", "verified": true, "result": "C(6,4,2) = 3"}
+{"v": 6, "k": 4, "t": 3, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,4,3) <= 6", "verified": true, "result": "C(6,4,3) = 6"}
+{"v": 6, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,5,2) <= 3", "verified": true, "result": "C(6,5,2) = 3"}
+{"v": 6, "k": 5, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(6,5,3) <= 4", "verified": true, "result": "C(6,5,3) = 4"}
+{"v": 6, "k": 5, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(6,5,4) <= 5", "verified": true, "result": "C(6,5,4) = 5"}
+{"v": 7, "k": 3, "t": 2, "schoenheim": 7, "status": "SAT", "conclusion": "C(7,3,2) <= 7", "verified": true, "result": "C(7,3,2) = 7"}
+{"v": 7, "k": 4, "t": 2, "schoenheim": 4, "status": "UNSAT", "conclusion": "C(7,4,2) >= 5", "verified": null, "result": "C(7,4,2) >= 5  (Schoenheim gives only 4)"}
+{"v": 7, "k": 4, "t": 3, "schoenheim": 11, "status": "UNSAT", "conclusion": "C(7,4,3) >= 12", "verified": null, "result": "C(7,4,3) >= 12  (Schoenheim gives only 11)"}
+{"v": 7, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,5,2) <= 3", "verified": true, "result": "C(7,5,2) = 3"}
+{"v": 7, "k": 5, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,5,3) <= 5", "verified": true, "result": "C(7,5,3) = 5"}
+{"v": 7, "k": 5, "t": 4, "schoenheim": 9, "status": "SAT", "conclusion": "C(7,5,4) <= 9", "verified": true, "result": "C(7,5,4) = 9"}
+{"v": 7, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,6,2) <= 3", "verified": true, "result": "C(7,6,2) = 3"}
+{"v": 7, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(7,6,3) <= 4", "verified": true, "result": "C(7,6,3) = 4"}
+{"v": 7, "k": 6, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,6,4) <= 5", "verified": true, "result": "C(7,6,4) = 5"}
+{"v": 7, "k": 6, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(7,6,5) <= 6", "verified": true, "result": "C(7,6,5) = 6"}
+{"v": 8, "k": 3, "t": 2, "schoenheim": 11, "status": "SAT", "conclusion": "C(8,3,2) <= 11", "verified": true, "result": "C(8,3,2) = 11"}
+{"v": 8, "k": 4, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,4,2) <= 6", "verified": true, "result": "C(8,4,2) = 6"}
+{"v": 8, "k": 4, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,5,2) <= 4", "verified": true, "result": "C(8,5,2) = 4"}
+{"v": 8, "k": 5, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 4, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,6,2) <= 3", "verified": true, "result": "C(8,6,2) = 3"}
+{"v": 8, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,6,3) <= 4", "verified": true, "result": "C(8,6,3) = 4"}
+{"v": 8, "k": 6, "t": 4, "schoenheim": 7, "status": "SAT", "conclusion": "C(8,6,4) <= 7", "verified": true, "result": "C(8,6,4) = 7"}
+{"v": 8, "k": 6, "t": 5, "schoenheim": 12, "status": "SAT", "conclusion": "C(8,6,5) <= 12", "verified": true, "result": "C(8,6,5) = 12"}
+{"v": 8, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,7,2) <= 3", "verified": true, "result": "C(8,7,2) = 3"}
+{"v": 8, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,7,3) <= 4", "verified": true, "result": "C(8,7,3) = 4"}
+{"v": 8, "k": 7, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(8,7,4) <= 5", "verified": true, "result": "C(8,7,4) = 5"}
+{"v": 8, "k": 7, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,7,5) <= 6", "verified": true, "result": "C(8,7,5) = 6"}
+{"v": 9, "k": 3, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 3, "schoenheim": 25, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,6,2) <= 3", "verified": true, "result": "C(9,6,2) = 3"}
+{"v": 9, "k": 6, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 5, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,7,2) <= 3", "verified": true, "result": "C(9,7,2) = 3"}
+{"v": 9, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,7,3) <= 4", "verified": true, "result": "C(9,7,3) = 4"}
+{"v": 9, "k": 7, "t": 4, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,7,4) <= 6", "verified": true, "result": "C(9,7,4) = 6"}
+{"v": 9, "k": 7, "t": 5, "schoenheim": 9, "status": "SAT", "conclusion": "C(9,7,5) <= 9", "verified": true, "result": "C(9,7,5) = 9"}
+{"v": 9, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,8,2) <= 3", "verified": true, "result": "C(9,8,2) = 3"}
+{"v": 9, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,8,3) <= 4", "verified": true, "result": "C(9,8,3) = 4"}
+{"v": 9, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(9,8,4) <= 5", "verified": true, "result": "C(9,8,4) = 5"}
+{"v": 9, "k": 8, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,8,5) <= 6", "verified": true, "result": "C(9,8,5) = 6"}
+{"v": 10, "k": 3, "t": 2, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 3, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 4, "schoenheim": 50, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,6,2) <= 4", "verified": true, "result": "C(10,6,2) = 4"}
+{"v": 10, "k": 6, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 4, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 5, "schoenheim": 44, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,7,2) <= 3", "verified": true, "result": "C(10,7,2) = 3"}
+{"v": 10, "k": 7, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 4, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 5, "schoenheim": 16, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,8,2) <= 3", "verified": true, "result": "C(10,8,2) = 3"}
+{"v": 10, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,8,3) <= 4", "verified": true, "result": "C(10,8,3) = 4"}
+{"v": 10, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,8,4) <= 5", "verified": true, "result": "C(10,8,4) = 5"}
+{"v": 10, "k": 8, "t": 5, "schoenheim": 8, "status": "SAT", "conclusion": "C(10,8,5) <= 8", "verified": true, "result": "C(10,8,5) = 8"}
+{"v": 10, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,9,2) <= 3", "verified": true, "result": "C(10,9,2) = 3"}
+{"v": 10, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,9,3) <= 4", "verified": true, "result": "C(10,9,3) = 4"}
+{"v": 10, "k": 9, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,9,4) <= 5", "verified": true, "result": "C(10,9,4) = 5"}
+{"v": 10, "k": 9, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(10,9,5) <= 6", "verified": true, "result": "C(10,9,5) = 6"}
+{"v": 5, "k": 3, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,3,2) <= 4", "verified": true, "result": "C(5,3,2) = 4"}
+{"v": 5, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(5,4,2) <= 3", "verified": true, "result": "C(5,4,2) = 3"}
+{"v": 5, "k": 4, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,4,3) <= 4", "verified": true, "result": "C(5,4,3) = 4"}
+{"v": 6, "k": 3, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,3,2) <= 6", "verified": true, "result": "C(6,3,2) = 6"}
+{"v": 6, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,4,2) <= 3", "verified": true, "result": "C(6,4,2) = 3"}
+{"v": 6, "k": 4, "t": 3, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,4,3) <= 6", "verified": true, "result": "C(6,4,3) = 6"}
+{"v": 6, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,5,2) <= 3", "verified": true, "result": "C(6,5,2) = 3"}
+{"v": 6, "k": 5, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(6,5,3) <= 4", "verified": true, "result": "C(6,5,3) = 4"}
+{"v": 6, "k": 5, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(6,5,4) <= 5", "verified": true, "result": "C(6,5,4) = 5"}
+{"v": 7, "k": 3, "t": 2, "schoenheim": 7, "status": "SAT", "conclusion": "C(7,3,2) <= 7", "verified": true, "result": "C(7,3,2) = 7"}
+{"v": 7, "k": 4, "t": 2, "schoenheim": 4, "status": "UNSAT", "conclusion": "C(7,4,2) >= 5", "verified": null, "result": "C(7,4,2) >= 5  (Schoenheim gives only 4)"}
+{"v": 7, "k": 4, "t": 3, "schoenheim": 11, "status": "UNSAT", "conclusion": "C(7,4,3) >= 12", "verified": null, "result": "C(7,4,3) >= 12  (Schoenheim gives only 11)"}
+{"v": 7, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,5,2) <= 3", "verified": true, "result": "C(7,5,2) = 3"}
+{"v": 7, "k": 5, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,5,3) <= 5", "verified": true, "result": "C(7,5,3) = 5"}
+{"v": 7, "k": 5, "t": 4, "schoenheim": 9, "status": "SAT", "conclusion": "C(7,5,4) <= 9", "verified": true, "result": "C(7,5,4) = 9"}
+{"v": 7, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,6,2) <= 3", "verified": true, "result": "C(7,6,2) = 3"}
+{"v": 7, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(7,6,3) <= 4", "verified": true, "result": "C(7,6,3) = 4"}
+{"v": 7, "k": 6, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,6,4) <= 5", "verified": true, "result": "C(7,6,4) = 5"}
+{"v": 7, "k": 6, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(7,6,5) <= 6", "verified": true, "result": "C(7,6,5) = 6"}
+{"v": 8, "k": 3, "t": 2, "schoenheim": 11, "status": "SAT", "conclusion": "C(8,3,2) <= 11", "verified": true, "result": "C(8,3,2) = 11"}
+{"v": 8, "k": 4, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,4,2) <= 6", "verified": true, "result": "C(8,4,2) = 6"}
+{"v": 8, "k": 4, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,5,2) <= 4", "verified": true, "result": "C(8,5,2) = 4"}
+{"v": 8, "k": 5, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 4, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,6,2) <= 3", "verified": true, "result": "C(8,6,2) = 3"}
+{"v": 8, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,6,3) <= 4", "verified": true, "result": "C(8,6,3) = 4"}
+{"v": 8, "k": 6, "t": 4, "schoenheim": 7, "status": "SAT", "conclusion": "C(8,6,4) <= 7", "verified": true, "result": "C(8,6,4) = 7"}
+{"v": 8, "k": 6, "t": 5, "schoenheim": 12, "status": "SAT", "conclusion": "C(8,6,5) <= 12", "verified": true, "result": "C(8,6,5) = 12"}
+{"v": 8, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,7,2) <= 3", "verified": true, "result": "C(8,7,2) = 3"}
+{"v": 8, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,7,3) <= 4", "verified": true, "result": "C(8,7,3) = 4"}
+{"v": 8, "k": 7, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(8,7,4) <= 5", "verified": true, "result": "C(8,7,4) = 5"}
+{"v": 8, "k": 7, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,7,5) <= 6", "verified": true, "result": "C(8,7,5) = 6"}
+{"v": 9, "k": 3, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 3, "schoenheim": 25, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,6,2) <= 3", "verified": true, "result": "C(9,6,2) = 3"}
+{"v": 9, "k": 6, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 5, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,7,2) <= 3", "verified": true, "result": "C(9,7,2) = 3"}
+{"v": 9, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,7,3) <= 4", "verified": true, "result": "C(9,7,3) = 4"}
+{"v": 9, "k": 7, "t": 4, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,7,4) <= 6", "verified": true, "result": "C(9,7,4) = 6"}
+{"v": 9, "k": 7, "t": 5, "schoenheim": 9, "status": "SAT", "conclusion": "C(9,7,5) <= 9", "verified": true, "result": "C(9,7,5) = 9"}
+{"v": 9, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,8,2) <= 3", "verified": true, "result": "C(9,8,2) = 3"}
+{"v": 9, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,8,3) <= 4", "verified": true, "result": "C(9,8,3) = 4"}
+{"v": 9, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(9,8,4) <= 5", "verified": true, "result": "C(9,8,4) = 5"}
+{"v": 9, "k": 8, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,8,5) <= 6", "verified": true, "result": "C(9,8,5) = 6"}
+{"v": 10, "k": 3, "t": 2, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 3, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 4, "schoenheim": 50, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,6,2) <= 4", "verified": true, "result": "C(10,6,2) = 4"}
+{"v": 10, "k": 6, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 4, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 5, "schoenheim": 44, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,7,2) <= 3", "verified": true, "result": "C(10,7,2) = 3"}
+{"v": 10, "k": 7, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 4, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 5, "schoenheim": 16, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,8,2) <= 3", "verified": true, "result": "C(10,8,2) = 3"}
+{"v": 10, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,8,3) <= 4", "verified": true, "result": "C(10,8,3) = 4"}
+{"v": 10, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,8,4) <= 5", "verified": true, "result": "C(10,8,4) = 5"}
+{"v": 10, "k": 8, "t": 5, "schoenheim": 8, "status": "SAT", "conclusion": "C(10,8,5) <= 8", "verified": true, "result": "C(10,8,5) = 8"}
+{"v": 10, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,9,2) <= 3", "verified": true, "result": "C(10,9,2) = 3"}
+{"v": 10, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,9,3) <= 4", "verified": true, "result": "C(10,9,3) = 4"}
+{"v": 10, "k": 9, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,9,4) <= 5", "verified": true, "result": "C(10,9,4) = 5"}
+{"v": 10, "k": 9, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(10,9,5) <= 6", "verified": true, "result": "C(10,9,5) = 6"}
+{"v": 5, "k": 3, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,3,2) <= 4", "verified": true, "result": "C(5,3,2) = 4"}
+{"v": 5, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(5,4,2) <= 3", "verified": true, "result": "C(5,4,2) = 3"}
+{"v": 5, "k": 4, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,4,3) <= 4", "verified": true, "result": "C(5,4,3) = 4"}
+{"v": 6, "k": 3, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,3,2) <= 6", "verified": true, "result": "C(6,3,2) = 6"}
+{"v": 6, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,4,2) <= 3", "verified": true, "result": "C(6,4,2) = 3"}
+{"v": 6, "k": 4, "t": 3, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,4,3) <= 6", "verified": true, "result": "C(6,4,3) = 6"}
+{"v": 6, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,5,2) <= 3", "verified": true, "result": "C(6,5,2) = 3"}
+{"v": 6, "k": 5, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(6,5,3) <= 4", "verified": true, "result": "C(6,5,3) = 4"}
+{"v": 6, "k": 5, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(6,5,4) <= 5", "verified": true, "result": "C(6,5,4) = 5"}
+{"v": 7, "k": 3, "t": 2, "schoenheim": 7, "status": "SAT", "conclusion": "C(7,3,2) <= 7", "verified": true, "result": "C(7,3,2) = 7"}
+{"v": 7, "k": 4, "t": 2, "schoenheim": 4, "status": "UNSAT", "conclusion": "C(7,4,2) >= 5", "verified": null, "result": "C(7,4,2) >= 5  (Schoenheim gives only 4)"}
+{"v": 7, "k": 4, "t": 3, "schoenheim": 11, "status": "UNSAT", "conclusion": "C(7,4,3) >= 12", "verified": null, "result": "C(7,4,3) >= 12  (Schoenheim gives only 11)"}
+{"v": 7, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,5,2) <= 3", "verified": true, "result": "C(7,5,2) = 3"}
+{"v": 7, "k": 5, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,5,3) <= 5", "verified": true, "result": "C(7,5,3) = 5"}
+{"v": 7, "k": 5, "t": 4, "schoenheim": 9, "status": "SAT", "conclusion": "C(7,5,4) <= 9", "verified": true, "result": "C(7,5,4) = 9"}
+{"v": 7, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,6,2) <= 3", "verified": true, "result": "C(7,6,2) = 3"}
+{"v": 7, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(7,6,3) <= 4", "verified": true, "result": "C(7,6,3) = 4"}
+{"v": 7, "k": 6, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,6,4) <= 5", "verified": true, "result": "C(7,6,4) = 5"}
+{"v": 7, "k": 6, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(7,6,5) <= 6", "verified": true, "result": "C(7,6,5) = 6"}
+{"v": 8, "k": 3, "t": 2, "schoenheim": 11, "status": "SAT", "conclusion": "C(8,3,2) <= 11", "verified": true, "result": "C(8,3,2) = 11"}
+{"v": 8, "k": 4, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,4,2) <= 6", "verified": true, "result": "C(8,4,2) = 6"}
+{"v": 8, "k": 4, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,5,2) <= 4", "verified": true, "result": "C(8,5,2) = 4"}
+{"v": 8, "k": 5, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 4, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,6,2) <= 3", "verified": true, "result": "C(8,6,2) = 3"}
+{"v": 8, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,6,3) <= 4", "verified": true, "result": "C(8,6,3) = 4"}
+{"v": 8, "k": 6, "t": 4, "schoenheim": 7, "status": "SAT", "conclusion": "C(8,6,4) <= 7", "verified": true, "result": "C(8,6,4) = 7"}
+{"v": 8, "k": 6, "t": 5, "schoenheim": 12, "status": "SAT", "conclusion": "C(8,6,5) <= 12", "verified": true, "result": "C(8,6,5) = 12"}
+{"v": 8, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,7,2) <= 3", "verified": true, "result": "C(8,7,2) = 3"}
+{"v": 8, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,7,3) <= 4", "verified": true, "result": "C(8,7,3) = 4"}
+{"v": 8, "k": 7, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(8,7,4) <= 5", "verified": true, "result": "C(8,7,4) = 5"}
+{"v": 8, "k": 7, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,7,5) <= 6", "verified": true, "result": "C(8,7,5) = 6"}
+{"v": 9, "k": 3, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 3, "schoenheim": 25, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,6,2) <= 3", "verified": true, "result": "C(9,6,2) = 3"}
+{"v": 9, "k": 6, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 5, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,7,2) <= 3", "verified": true, "result": "C(9,7,2) = 3"}
+{"v": 9, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,7,3) <= 4", "verified": true, "result": "C(9,7,3) = 4"}
+{"v": 9, "k": 7, "t": 4, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,7,4) <= 6", "verified": true, "result": "C(9,7,4) = 6"}
+{"v": 9, "k": 7, "t": 5, "schoenheim": 9, "status": "SAT", "conclusion": "C(9,7,5) <= 9", "verified": true, "result": "C(9,7,5) = 9"}
+{"v": 9, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,8,2) <= 3", "verified": true, "result": "C(9,8,2) = 3"}
+{"v": 9, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,8,3) <= 4", "verified": true, "result": "C(9,8,3) = 4"}
+{"v": 9, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(9,8,4) <= 5", "verified": true, "result": "C(9,8,4) = 5"}
+{"v": 9, "k": 8, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,8,5) <= 6", "verified": true, "result": "C(9,8,5) = 6"}
+{"v": 10, "k": 3, "t": 2, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 3, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 4, "schoenheim": 50, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,6,2) <= 4", "verified": true, "result": "C(10,6,2) = 4"}
+{"v": 10, "k": 6, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 4, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 5, "schoenheim": 44, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,7,2) <= 3", "verified": true, "result": "C(10,7,2) = 3"}
+{"v": 10, "k": 7, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 4, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 5, "schoenheim": 16, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,8,2) <= 3", "verified": true, "result": "C(10,8,2) = 3"}
+{"v": 10, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,8,3) <= 4", "verified": true, "result": "C(10,8,3) = 4"}
+{"v": 10, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,8,4) <= 5", "verified": true, "result": "C(10,8,4) = 5"}
+{"v": 10, "k": 8, "t": 5, "schoenheim": 8, "status": "SAT", "conclusion": "C(10,8,5) <= 8", "verified": true, "result": "C(10,8,5) = 8"}
+{"v": 10, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,9,2) <= 3", "verified": true, "result": "C(10,9,2) = 3"}
+{"v": 10, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,9,3) <= 4", "verified": true, "result": "C(10,9,3) = 4"}
+{"v": 10, "k": 9, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,9,4) <= 5", "verified": true, "result": "C(10,9,4) = 5"}
+{"v": 10, "k": 9, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(10,9,5) <= 6", "verified": true, "result": "C(10,9,5) = 6"}
+{"v": 5, "k": 3, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,3,2) <= 4", "verified": true, "result": "C(5,3,2) = 4"}
+{"v": 5, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(5,4,2) <= 3", "verified": true, "result": "C(5,4,2) = 3"}
+{"v": 5, "k": 4, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(5,4,3) <= 4", "verified": true, "result": "C(5,4,3) = 4"}
+{"v": 6, "k": 3, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,3,2) <= 6", "verified": true, "result": "C(6,3,2) = 6"}
+{"v": 6, "k": 4, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,4,2) <= 3", "verified": true, "result": "C(6,4,2) = 3"}
+{"v": 6, "k": 4, "t": 3, "schoenheim": 6, "status": "SAT", "conclusion": "C(6,4,3) <= 6", "verified": true, "result": "C(6,4,3) = 6"}
+{"v": 6, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(6,5,2) <= 3", "verified": true, "result": "C(6,5,2) = 3"}
+{"v": 6, "k": 5, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(6,5,3) <= 4", "verified": true, "result": "C(6,5,3) = 4"}
+{"v": 6, "k": 5, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(6,5,4) <= 5", "verified": true, "result": "C(6,5,4) = 5"}
+{"v": 7, "k": 3, "t": 2, "schoenheim": 7, "status": "SAT", "conclusion": "C(7,3,2) <= 7", "verified": true, "result": "C(7,3,2) = 7"}
+{"v": 7, "k": 4, "t": 2, "schoenheim": 4, "status": "UNSAT", "conclusion": "C(7,4,2) >= 5", "verified": null, "result": "C(7,4,2) >= 5  (Schoenheim gives only 4)"}
+{"v": 7, "k": 4, "t": 3, "schoenheim": 11, "status": "UNSAT", "conclusion": "C(7,4,3) >= 12", "verified": null, "result": "C(7,4,3) >= 12  (Schoenheim gives only 11)"}
+{"v": 7, "k": 5, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,5,2) <= 3", "verified": true, "result": "C(7,5,2) = 3"}
+{"v": 7, "k": 5, "t": 3, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,5,3) <= 5", "verified": true, "result": "C(7,5,3) = 5"}
+{"v": 7, "k": 5, "t": 4, "schoenheim": 9, "status": "SAT", "conclusion": "C(7,5,4) <= 9", "verified": true, "result": "C(7,5,4) = 9"}
+{"v": 7, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(7,6,2) <= 3", "verified": true, "result": "C(7,6,2) = 3"}
+{"v": 7, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(7,6,3) <= 4", "verified": true, "result": "C(7,6,3) = 4"}
+{"v": 7, "k": 6, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(7,6,4) <= 5", "verified": true, "result": "C(7,6,4) = 5"}
+{"v": 7, "k": 6, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(7,6,5) <= 6", "verified": true, "result": "C(7,6,5) = 6"}
+{"v": 8, "k": 3, "t": 2, "schoenheim": 11, "status": "SAT", "conclusion": "C(8,3,2) <= 11", "verified": true, "result": "C(8,3,2) = 11"}
+{"v": 8, "k": 4, "t": 2, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,4,2) <= 6", "verified": true, "result": "C(8,4,2) = 6"}
+{"v": 8, "k": 4, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,5,2) <= 4", "verified": true, "result": "C(8,5,2) = 4"}
+{"v": 8, "k": 5, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 5, "t": 4, "schoenheim": 18, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 8, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,6,2) <= 3", "verified": true, "result": "C(8,6,2) = 3"}
+{"v": 8, "k": 6, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,6,3) <= 4", "verified": true, "result": "C(8,6,3) = 4"}
+{"v": 8, "k": 6, "t": 4, "schoenheim": 7, "status": "SAT", "conclusion": "C(8,6,4) <= 7", "verified": true, "result": "C(8,6,4) = 7"}
+{"v": 8, "k": 6, "t": 5, "schoenheim": 12, "status": "SAT", "conclusion": "C(8,6,5) <= 12", "verified": true, "result": "C(8,6,5) = 12"}
+{"v": 8, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(8,7,2) <= 3", "verified": true, "result": "C(8,7,2) = 3"}
+{"v": 8, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(8,7,3) <= 4", "verified": true, "result": "C(8,7,3) = 4"}
+{"v": 8, "k": 7, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(8,7,4) <= 5", "verified": true, "result": "C(8,7,4) = 5"}
+{"v": 8, "k": 7, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(8,7,5) <= 6", "verified": true, "result": "C(8,7,5) = 6"}
+{"v": 9, "k": 3, "t": 2, "schoenheim": 12, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 2, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 4, "t": 3, "schoenheim": 25, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 2, "schoenheim": 4, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 3, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 5, "t": 4, "schoenheim": 26, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,6,2) <= 3", "verified": true, "result": "C(9,6,2) = 3"}
+{"v": 9, "k": 6, "t": 3, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 4, "schoenheim": 11, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 6, "t": 5, "schoenheim": 27, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 9, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,7,2) <= 3", "verified": true, "result": "C(9,7,2) = 3"}
+{"v": 9, "k": 7, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,7,3) <= 4", "verified": true, "result": "C(9,7,3) = 4"}
+{"v": 9, "k": 7, "t": 4, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,7,4) <= 6", "verified": true, "result": "C(9,7,4) = 6"}
+{"v": 9, "k": 7, "t": 5, "schoenheim": 9, "status": "SAT", "conclusion": "C(9,7,5) <= 9", "verified": true, "result": "C(9,7,5) = 9"}
+{"v": 9, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(9,8,2) <= 3", "verified": true, "result": "C(9,8,2) = 3"}
+{"v": 9, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(9,8,3) <= 4", "verified": true, "result": "C(9,8,3) = 4"}
+{"v": 9, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(9,8,4) <= 5", "verified": true, "result": "C(9,8,4) = 5"}
+{"v": 9, "k": 8, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(9,8,5) <= 6", "verified": true, "result": "C(9,8,5) = 6"}
+{"v": 10, "k": 3, "t": 2, "schoenheim": 17, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 2, "schoenheim": 8, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 4, "t": 3, "schoenheim": 30, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 2, "schoenheim": 6, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 3, "schoenheim": 14, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 5, "t": 4, "schoenheim": 50, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 2, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,6,2) <= 4", "verified": true, "result": "C(10,6,2) = 4"}
+{"v": 10, "k": 6, "t": 3, "schoenheim": 7, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 4, "schoenheim": 19, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 6, "t": 5, "schoenheim": 44, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,7,2) <= 3", "verified": true, "result": "C(10,7,2) = 3"}
+{"v": 10, "k": 7, "t": 3, "schoenheim": 5, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 4, "schoenheim": 9, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 7, "t": 5, "schoenheim": 16, "status": "UNKNOWN", "conclusion": "", "verified": null}
+{"v": 10, "k": 8, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,8,2) <= 3", "verified": true, "result": "C(10,8,2) = 3"}
+{"v": 10, "k": 8, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,8,3) <= 4", "verified": true, "result": "C(10,8,3) = 4"}
+{"v": 10, "k": 8, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,8,4) <= 5", "verified": true, "result": "C(10,8,4) = 5"}
+{"v": 10, "k": 8, "t": 5, "schoenheim": 8, "status": "SAT", "conclusion": "C(10,8,5) <= 8", "verified": true, "result": "C(10,8,5) = 8"}
+{"v": 10, "k": 9, "t": 2, "schoenheim": 3, "status": "SAT", "conclusion": "C(10,9,2) <= 3", "verified": true, "result": "C(10,9,2) = 3"}
+{"v": 10, "k": 9, "t": 3, "schoenheim": 4, "status": "SAT", "conclusion": "C(10,9,3) <= 4", "verified": true, "result": "C(10,9,3) = 4"}
+{"v": 10, "k": 9, "t": 4, "schoenheim": 5, "status": "SAT", "conclusion": "C(10,9,4) <= 5", "verified": true, "result": "C(10,9,4) = 5"}
+{"v": 10, "k": 9, "t": 5, "schoenheim": 6, "status": "SAT", "conclusion": "C(10,9,5) <= 6", "verified": true, "result": "C(10,9,5) = 6"}
