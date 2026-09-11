@@ -7,6 +7,11 @@ no point can occur in 6 or more blocks.
 By point symmetry it suffices to demand degree(point 0) >= 6.  UNSAT proves
 the universal cap <= 5.  The script writes a reproducible DIMACS instance and
 JSON receipt; no global C(13,6,3) conclusion is made here.
+
+Cardinality note: PySAT's incremental-totalizer RHS is used only for AT-MOST
+constraints.  AT-LEAST is encoded as AT-MOST on the negated literals.  A
+built-in SAT/UNSAT self-test runs before the mathematical instance.  This
+repairs the earlier incorrect use of a positive RHS literal as a lower bound.
 """
 from __future__ import annotations
 
@@ -21,33 +26,30 @@ BLOCKS = tuple(itertools.combinations(V, 5))
 PAIRS = tuple(itertools.combinations(V, 2))
 
 
-def add_totalizer(cnf, vpool, lits, low=None, high=None):
-    assert low is not None or high is not None
-    cap = 0
-    if low is not None: cap = max(cap, low)
-    if high is not None: cap = max(cap, high + 1)
-    cap = min(cap, len(lits))
-    tot = ITotalizer(lits=lits, ubound=cap, top_id=vpool.top)
+def add_at_most(cnf, vpool, lits, high):
+    """Encode sum(lits) <= high using the supported totalizer direction."""
+    lits = list(lits)
+    if high >= len(lits):
+        return
+    if high < 0:
+        cnf.append([])
+        return
+    # rhs[high] means that at least high+1 inputs are true; forbid it.
+    tot = ITotalizer(lits=lits, ubound=high + 1, top_id=vpool.top)
     cnf.extend(tot.cnf.clauses)
     vpool.top = max(vpool.top, tot.top_id)
-    if low is not None and low > 0:
-        cnf.append([tot.rhs[low - 1]])
-    if high is not None and high < len(lits):
-        cnf.append([-tot.rhs[high]])
+    cnf.append([-tot.rhs[high]])
 
 
-def build():
-    vpool = IDPool(start_from=1)
-    bvars = [vpool.id(("B", b)) for b in BLOCKS]
-    bv = dict(zip(BLOCKS, bvars))
-    cnf = CNF()
-    add_totalizer(cnf, vpool, bvars, low=9, high=9)
-    for p in PAIRS:
-        sp = set(p)
-        cnf.append([bv[b] for b in BLOCKS if sp.issubset(b)])
-    # WLOG test whether some point can have degree >= 6.
-    add_totalizer(cnf, vpool, [bv[b] for b in BLOCKS if 0 in b], low=6)
-    return cnf, vpool, bvars
+def add_cardinality(cnf, vpool, lits, low=None, high=None):
+    """Encode low <= sum(lits) <= high without relying on reverse RHS semantics."""
+    lits = list(lits)
+    assert low is not None or high is not None
+    if high is not None:
+        add_at_most(cnf, vpool, lits, high)
+    if low is not None:
+        # sum(lits) >= low  <=>  sum(not lits) <= len(lits)-low.
+        add_at_most(cnf, vpool, [-lit for lit in lits], len(lits) - low)
 
 
 def choose(cnf):
@@ -59,11 +61,61 @@ def choose(cnf):
     raise RuntimeError("no SAT solver available")
 
 
+def cardinality_selftest():
+    """Fail closed unless exact/lower cardinality really constrains models."""
+    # Exactly 3 of 4 plus x0=false,x1=false must be UNSAT.
+    vp = IDPool(start_from=1)
+    xs = [vp.id(("t", i)) for i in range(4)]
+    cnf = CNF()
+    add_cardinality(cnf, vp, xs, low=3, high=3)
+    cnf.append([-xs[0]])
+    cnf.append([-xs[1]])
+    _, s = choose(cnf)
+    assert not s.solve(), "cardinality self-test failed: impossible exact-3 model accepted"
+    s.delete()
+
+    # Exactly 2 of 4 with 1100 fixed must be SAT.
+    vp = IDPool(start_from=1)
+    xs = [vp.id(("u", i)) for i in range(4)]
+    cnf = CNF()
+    add_cardinality(cnf, vp, xs, low=2, high=2)
+    cnf.extend([[xs[0]], [xs[1]], [-xs[2]], [-xs[3]]])
+    _, s = choose(cnf)
+    assert s.solve(), "cardinality self-test failed: valid exact-2 model rejected"
+    s.delete()
+
+    # At least 3 of 4 plus three fixed false must be UNSAT.
+    vp = IDPool(start_from=1)
+    xs = [vp.id(("v", i)) for i in range(4)]
+    cnf = CNF()
+    add_cardinality(cnf, vp, xs, low=3)
+    cnf.extend([[-xs[0]], [-xs[1]], [-xs[2]]])
+    _, s = choose(cnf)
+    assert not s.solve(), "cardinality self-test failed: lower bound not enforced"
+    s.delete()
+
+
+def build():
+    vpool = IDPool(start_from=1)
+    bvars = [vpool.id(("B", b)) for b in BLOCKS]
+    bv = dict(zip(BLOCKS, bvars))
+    cnf = CNF()
+    add_cardinality(cnf, vpool, bvars, low=9, high=9)
+    for p in PAIRS:
+        sp = set(p)
+        cnf.append([bv[b] for b in BLOCKS if sp.issubset(b)])
+    # WLOG test whether some point can have degree >= 6.
+    add_cardinality(cnf, vpool, [bv[b] for b in BLOCKS if 0 in b], low=6)
+    return cnf, vpool, bvars
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cnf", type=Path, default=Path("c12_5_2_degree_ge6.cnf"))
     ap.add_argument("--json", type=Path, default=Path("c12_5_2_degree_cap.json"))
     args = ap.parse_args()
+
+    cardinality_selftest()
     t0 = time.time()
     cnf, vpool, bvars = build()
     args.cnf.parent.mkdir(parents=True, exist_ok=True)
@@ -84,6 +136,7 @@ def main():
         "claim": "no 9-block C(12,5,2) cover has a point of degree >= 6",
         "status": "COUNTEREXAMPLE" if sat else "UNSAT",
         "solver": name,
+        "cardinality_selftest": "PASS",
         "primary_block_variables": len(BLOCKS),
         "cnf_variables": vpool.top,
         "cnf_clauses": len(cnf.clauses),
