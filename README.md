@@ -1,10 +1,49 @@
 # combinatorial-records
 
-Verified combinatorial computations: a Sidon lower bound with a self-checking witness, 677
-covering numbers, an exhaustive circulant Ramsey search, a Sidon divergence threshold, and a
-conditional twin-primes equivalence with its barriers written down.
+Verified combinatorial computations across Sidon sets, covering designs, Ramsey structure, the
+Lonely Runner conjecture, finite-field avoidance, automata, and additive encodings.
 
 Author: Jared Wilder. First public timestamp: 2026-09-10.
+**This repository is written by two concurrent sessions and grows. The directory listing is
+authoritative; this README follows it.**
+
+## Contents at a glance
+
+| directory | contents |
+|---|---|
+| `lonely-runner/` | **Lonely Runner at 13 effective speeds.** A 42-entry theorem bank from a 19-round campaign. **Verdict: LRC(13) NOT CLOSED.** Strongest closed subproblem: the large-prime canonical class p > 2366. |
+| `ramsey-r55/` | A pure-mathematics deep dive on R(5,5), plus **untouched-base extension lemmas** for adding a vertex to an existing (5,5)-Ramsey colouring. **Not a new bound on R(5,5)**, stated in the file. |
+| `sidon/` | **f(7) >= 24** for binary Sidon sets, with a verifier that exits 0 |
+| `covering/`, `covering-designs/` | 677 verified covering numbers, monotonicity validated, plus **C(13,6,3) witnesses and target-20 cover structure** |
+| `erdos500/` | A deletion-density and inheritance toolkit, with a recovered-theorem index |
+| `finite-fields/` | Three **complete finite classifications**: subsets of F_73^x simultaneously sum-free, product-free and 3-AP-free; subsets of F_31^x sum-free and product-free; subsets of Z/31Z sum-free and free of nontrivial 3-term arithmetic progressions |
+| `multiplicative/product-gp-free-50/` | An **exact finite extremal computation** for product-free and geometric-progression-free subsets of [50] |
+| `automata/` | Finite transducer monoids, quotients and robust bounds; an abstract Lean identity index |
+| `additive-encodings/` | An abstract additive-encoding theorem bank |
+| `witness-vault/` | **21 concrete witness objects** independently revalidated in a forensic release |
+| `ramsey/` | Circulant Ramsey exhaustion: R(3,10) at n=40, R(4,6) at n=36, zero witnesses |
+| `twin-primes/` | A conditional Type I / Type II equivalence with both missing hypotheses named |
+| `findings/` | Per-result verdict files, including the Sidon ladder n=128 to n=1000 |
+
+## The claim discipline these files hold themselves to
+
+Each new file states its own limit rather than leaving it to a reader:
+
+- The Lonely Runner release says it publishes the estate **"without laundering retracted or
+  conditional steps into a proof of the full 14-runner case,"** treats the known 12-speed proof as
+  an external input, and notes that `LIVE-CERTIFIED` means a finite or computational certificate is
+  attached, **not** proof-assistant formalization.
+- The F73 classification marks its novelty posture
+  **`apparently_new_after_systematic_search`** and says absolute historical novelty **is not
+  claimed**.
+- The R(5,5) extension lemmas say plainly they are **not a new bound** and make no
+  historical-novelty claim.
+- The witness vault says **"a witness proves only the exact finite statement attached to it. It
+  does not inherit a stronger campaign status."**
+
+**No conjecture is claimed closed in this repository.**
+
+---
 
 ## 1. f(7) >= 24 for binary Sidon sets, with a verifier that runs
 
