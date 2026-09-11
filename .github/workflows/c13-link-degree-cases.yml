@@ -1,0 +1,44 @@
+name: C13 local degree cases 6-7
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'covering-designs/C13-6-3/prove_link_degree_case_cpsat.py'
+      - '.github/workflows/c13-link-degree-cases.yml'
+
+jobs:
+  exact-case:
+    strategy:
+      fail-fast: false
+      matrix:
+        degree: [6, 7]
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OR-Tools
+        run: pip install 'ortools>=9.10,<10'
+      - name: Solve exact degree case
+        shell: bash
+        run: |
+          set +e
+          python covering-designs/C13-6-3/prove_link_degree_case_cpsat.py \
+            --degree '${{ matrix.degree }}' \
+            --seconds 2400 \
+            | tee 'c12_5_2_degree_${{ matrix.degree }}.log'
+          rc=${PIPESTATUS[0]}
+          echo "solver_exit_code=$rc"
+          # 0=proved infeasible, 10=verified feasible counterexample, 2=unknown/timeout.
+          if [[ "$rc" != "0" && "$rc" != "10" && "$rc" != "2" ]]; then exit "$rc"; fi
+      - name: Upload receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c12-5-2-degree-${{ matrix.degree }}
+          path: |
+            c12_5_2_degree_${{ matrix.degree }}.json
+            c12_5_2_degree_${{ matrix.degree }}.log
