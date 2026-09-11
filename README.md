@@ -21,9 +21,23 @@ untouched here.
 [2,34], t in [1,6]. `covering/covering-bounds.json` validates monotonicity: 43 v-pair comparisons
 with 0 violations, 39 t-pair comparisons with 0 violations.
 
-**Zero of the 677 improve on the Schoenheim bound, and 92 rows are dominated by it.** These are
-verified values, not records. Saying otherwise would be the easiest lie in this repository and it
-is not true.
+**Correction, made 2026-09-10 after an independent recount, replacing an earlier false statement
+in this file.** The first version of this README said zero rows exceed the Schoenheim bound. That
+was wrong, and wrong in the direction of underclaiming.
+
+Twelve rows carry status `UNSAT`, covering **two distinct parameter triples**:
+
+| v | k | t | Schoenheim | UNSAT at that size proves |
+|---|---|---|---|---|
+| 7 | 4 | 2 | 4 | C(7,4,2) >= 5 |
+| 7 | 4 | 3 | 11 | C(7,4,3) >= 12 |
+
+So the true covering number **strictly exceeds the Schoenheim bound** for those two triples, which
+the computation proves rather than assumes.
+
+**That is not the same as beating the published record.** Schoenheim is a general lower-bound
+formula, and the literature value for a given triple may already sit above it. Whether either of
+these improves on the La Jolla entry has **not** been checked here and is not claimed.
 
 ## 3. Circulant Ramsey exhaustion
 
