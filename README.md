@@ -1,15 +1,16 @@
 # Combinatorial records
 
-Verified computations, classifications, witnesses, and theorem collections across Sidon sets, covering designs, Ramsey theory, Lonely Runner, finite-field avoidance, automata, multiplicative avoidance, and additive encodings.
+Verified computations, classifications, witnesses, and theorem collections across Sidon sets, covering designs, Ramsey theory, hereditary families, Lonely Runner, finite-field avoidance, automata, multiplicative avoidance, and additive encodings.
 
 Author: Jared Wilder. First public timestamp: 2026-09-10.
 
-This repository continues to grow; the directory tree is the authoritative inventory, while this README summarizes the main mathematical contents.
+This repository is the canonical home for compact finite/combinatorial results that do not yet need a dedicated repository of their own. The directory tree is the authoritative inventory; this README highlights the main mathematics.
 
 ## Contents at a glance
 
-| directory | contents |
+| directory / file | contents |
 |---|---|
+| [`erdos701-hereditary-rank2-star.md`](erdos701-hereditary-rank2-star.md) | **Exact rank-2 hereditary Chvátal theorem:** for every finite hereditary family of rank at most two, the maximum intersecting subfamily has size exactly the largest star. |
 | `lonely-runner/` | **Lonely Runner at 13 effective speeds:** a 42-entry theorem collection. The strongest completed subproblem covers the large-prime canonical class `p>2366`; the remaining 13-speed cases are recorded separately. |
 | `ramsey-r55/` | `R(5,5)` structural work, including **untouched-base extension lemmas** for adding one vertex to an existing `(5,5)`-Ramsey colouring. |
 | `sidon/` | **`f(7) >= 24`** for binary Sidon sets, with an executable verifier. |
@@ -35,9 +36,17 @@ The repository contains several ordinary mathematical categories:
 - **conditional reduction** — the conclusion follows once the named hypotheses are supplied;
 - **literature status** — historical novelty is recorded separately from mathematical correctness.
 
-Some historical files use internal labels such as `LIVE-CERTIFIED`; those mean that a finite/computational certificate is attached, not that the statement has been formalized in a proof assistant.
+Some historical files retain internal labels for provenance. Public summaries translate those labels into ordinary mathematical language.
 
-## 1. Binary Sidon sets: `f(7) >= 24`
+## 1. Rank-2 hereditary Chvátal theorem
+
+For every finite hereditary family `F` whose members have size at most two,
+
+`m(F)=Δ(F)`,
+
+where `m(F)` is the largest size of a pairwise-intersecting subfamily and `Δ(F)` is the largest full star. The complete proof is in [`erdos701-hereditary-rank2-star.md`](erdos701-hereditary-rank2-star.md).
+
+## 2. Binary Sidon sets: `f(7) >= 24`
 
 `sidon/` contains a 24-vector subset of `{0,1}^7` whose 300 pairwise sums are all distinct (OEIS A309370). Run
 
@@ -47,7 +56,7 @@ python sidon/verify_sidon_d7_24.py
 
 to check the witness. The result was also independently recomputed during the release.
 
-## 2. Covering numbers and two strict Schoenheim separations
+## 3. Covering numbers and two strict Schoenheim separations
 
 `covering/covering-firehose.jsonl` contains 677 verified `C(v,k,t)` rows over
 
@@ -66,35 +75,31 @@ A recount corrected an earlier underclaim: twelve UNSAT rows cover **two paramet
 
 Whether either inequality improves the best published table is a separate literature question.
 
-## 3. Circulant Ramsey-family exhaustions
+## 4. Circulant Ramsey-family exhaustions
 
 `ramsey/circulant-ramsey-exhaustion.json` checks:
 
 - **1,048,575** circulant families for the `R(3,10)` condition at `n=40`, with zero witnesses;
 - **262,143** circulant families for the `R(4,6)` condition at `n=36`, with zero witnesses.
 
-Small known cases are included to confirm that the implementation can both accept and reject examples correctly.
+Small known cases confirm that the implementation can both accept and reject examples correctly.
 
-The result is the complete elimination of those **circulant construction families** at those orders. It is not an unrestricted Ramsey-number computation.
+The result is the complete elimination of those **circulant construction families** at those orders.
 
-## 4. Sidon/C3 divergence at `n=35`
+## 5. Sidon/C3 divergence at `n=35`
 
 One computation found that for `n<=34`, the maximum Sidon-set size agrees with the maximum under an additional C3-permutation-free constraint, while at **`n=35`** the recorded values separate as `8` versus `7`.
 
 The original record did not preserve the exact C3 variant used in that comparison. The numerical calculation is therefore retained, while the comparison statement awaits reconstruction of that missing definition.
 
-## 5. Twin-prime conditional reductions
+## 6. Twin-prime conditional reductions
 
 `twin-primes/` develops Type I and Type II sufficiency conditions for the twin-prime asymptotic using a Heath-Brown decomposition. It isolates two analytic inputs that are not supplied in the repository:
 
 - Type I distribution at level `1-ε` over unrestricted moduli;
 - a nontrivial Type II bilinear bound at `M~N~x^(1/2)`.
 
-The value of the packet is the explicit reduction and identification of those missing analytic estimates, together with corrections to earlier versions of the derivation.
-
-## 6. Result notes
-
-`findings/` contains individual notes for the Sidon sequence computations, circulant Ramsey searches, covering computations, and an `R(5,5)` certificate-related result.
+The mathematical contribution is the explicit reduction and identification of those missing analytic estimates, together with corrections to earlier versions of the derivation.
 
 ## License
 
