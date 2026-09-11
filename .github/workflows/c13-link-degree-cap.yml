@@ -1,0 +1,40 @@
+name: C13 local C12-5-2 degree cap
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'covering-designs/C13-6-3/prove_link_degree_cap.py'
+      - '.github/workflows/c13-link-degree-cap.yml'
+
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PySAT
+        run: python -m pip install --upgrade pip 'python-sat'
+      - name: Solve local exact case
+        shell: bash
+        run: |
+          set +e
+          python covering-designs/C13-6-3/prove_link_degree_cap.py \
+            --cnf c12_5_2_degree_ge6.cnf \
+            --json c12_5_2_degree_cap.json \
+            | tee c12_5_2_degree_cap.log
+          rc=${PIPESTATUS[0]}
+          echo "solver_exit_code=$rc"
+          if [[ "$rc" != "10" && "$rc" != "20" ]]; then exit "$rc"; fi
+      - name: Upload local proof receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: c12-5-2-degree-cap
+          path: |
+            c12_5_2_degree_cap.json
+            c12_5_2_degree_cap.log
+            c12_5_2_degree_ge6.cnf
+          compression-level: 9
