@@ -1,6 +1,6 @@
 # Combinatorial records
 
-Verified computations, classifications, witnesses, and theorem collections across Sidon sets, covering designs, Ramsey theory, hereditary families, Lonely Runner, finite-field avoidance, automata, multiplicative avoidance, and additive encodings.
+Verified computations, classifications, witnesses, and theorem collections across Sidon sets, covering designs, covering systems, Ramsey theory, hereditary families, Lonely Runner, finite-field avoidance, automata, multiplicative avoidance, and additive encodings.
 
 Author: Jared Wilder. First public timestamp: 2026-09-10.
 
@@ -13,6 +13,8 @@ This repository is the canonical home for compact finite/combinatorial results t
 | [`erdos701-hereditary-rank2-star.md`](erdos701-hereditary-rank2-star.md) | **Exact rank-2 hereditary Chvátal theorem:** for every finite hereditary family of rank at most two, the maximum intersecting subfamily has size exactly the largest star. |
 | `lonely-runner/` | **Lonely Runner at 13 effective speeds:** a 42-entry theorem collection. The strongest completed subproblem covers the large-prime canonical class `p>2366`; the remaining 13-speed cases are recorded separately. |
 | `ramsey-r55/` | `R(5,5)` structural work, including **untouched-base extension lemmas** for adding one vertex to an existing `(5,5)`-Ramsey colouring. |
+| `ramsey/` | Restricted Ramsey-family results, including complete circulant searches for `R(3,10)` at `n=40` and `R(4,6)` at `n=36`, plus the **conference-switching impossibility theorem** for the corresponding Ramsey-book construction class. |
+| `covering-systems/` | Exact finite covering-system results, including the **seven-modulus Erdős–Selfridge odd-covering obstruction** for `{3,5,7,9,11,13,15}`. |
 | `sidon/` | **`f(7) >= 24`** for binary Sidon sets, with an executable verifier. |
 | `covering/`, `covering-designs/` | **677 verified covering-number rows**, monotonicity checks, `C(13,6,3)` 21-block witnesses, and structural restrictions on any hypothetical 20-cover. |
 | `erdos500/` | Deletion-density and inheritance lemmas with an indexed theorem collection. |
@@ -21,7 +23,6 @@ This repository is the canonical home for compact finite/combinatorial results t
 | `automata/` | Finite transducer monoids, quotients, robustness bounds, and an abstract Lean identity index. |
 | `additive-encodings/` | Additive-encoding theorems and constructions. |
 | `witness-vault/` | **21 concrete witness objects** independently rechecked for the public release. |
-| `ramsey/` | Complete circulant-family searches for the `R(3,10)` condition at `n=40` and the `R(4,6)` condition at `n=36`, both with zero witnesses in those restricted families. |
 | `twin-primes/` | Conditional Type I / Type II reductions identifying the two analytic inputs needed for that route to the twin-prime asymptotic. |
 | `findings/` | Individual result notes, including the Sidon computations from `n=128` through `n=1000`. |
 
@@ -86,13 +87,29 @@ Small known cases confirm that the implementation can both accept and reject exa
 
 The result is the complete elimination of those **circulant construction families** at those orders.
 
-## 5. Sidon/C3 divergence at `n=35`
+## 5. Conference-switching Ramsey-book elimination
+
+`ramsey/conference-switching-book-elimination.md` records a construction-class theorem: for `N=4m+2`, arbitrary diagonal switching of a symmetric conference-matrix construction cannot produce a graph avoiding `B_m` whose complement avoids `B_(m+1)`.
+
+At the campaign instance `N=398`, this rules out the entire switched symmetric-conference class for the `B_99 / B_100` target. It is a construction-class impossibility theorem, not a global Ramsey-book nonexistence result.
+
+## 6. Erdős–Selfridge seven-modulus obstruction
+
+`covering-systems/erdos-selfridge-odd-seven-moduli.md` records the exact finite statement that no choice of one residue class for each modulus in
+
+`{3,5,7,9,11,13,15}`
+
+covers all integers. Modulo their lcm this is a finite exact obstruction on 45,045 residue classes. The density sum exceeds one, so elementary density alone does not eliminate the family.
+
+The estate records independent CP-SAT and PySAT certification; recovery of the original solver/certificate files remains a provenance task.
+
+## 7. Sidon/C3 divergence at `n=35`
 
 One computation found that for `n<=34`, the maximum Sidon-set size agrees with the maximum under an additional C3-permutation-free constraint, while at **`n=35`** the recorded values separate as `8` versus `7`.
 
 The original record did not preserve the exact C3 variant used in that comparison. The numerical calculation is therefore retained, while the comparison statement awaits reconstruction of that missing definition.
 
-## 6. Twin-prime conditional reductions
+## 8. Twin-prime conditional reductions
 
 `twin-primes/` develops Type I and Type II sufficiency conditions for the twin-prime asymptotic using a Heath-Brown decomposition. It isolates two analytic inputs that are not supplied in the repository:
 
