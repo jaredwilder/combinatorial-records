@@ -1,7 +1,8 @@
 # Abstract Additive Encoding and Sparse-Coding Theorem Bank
 
 **Author:** Jared Wilder  
-**Public release:** 2026-09-10
+**Public release:** 2026-09-10  
+**Scope corrections:** 2026-09-11
 
 This file extracts the standalone mathematics from the carry-free research program. Concrete distributed packet layouts, checkpoint protocols, packed-syndrome aggregation mechanisms, verifier plumbing, and product-facing embodiments are intentionally excluded.
 
@@ -13,6 +14,8 @@ Internal status labels are provenance, not external priority judgments. Classica
 **Archived status:** `CLOSED_PROVED`  
 
 Equality in the full-box output-span bound forces positional weights, up to coordinate permutation and independent sign changes.
+
+A complete standalone proof is now public in `full-box-rigidity.md`.
 
 **Source:** `ENCIRCLEMENT-CARRY-FREE-ASSET-EXTRACTION-2026-08-05.zip!THEOREM-BANK.json`
 
@@ -43,12 +46,20 @@ Phi_B is injective on [-A,A]^m ∩ Z^m iff B>2A (for m>=2). The least integer ba
 
 **Source:** `ENCIRCLEMENT-CARRY-FREE-ASSET-EXTRACTION-2026-08-05.zip!THEOREM-BANK.json`
 
-## 5. Two-s Measurements Lower Bound — Corrected Scope
+## 5. Sparse Linear Measurements Lower Bound — Corrected Universal Scope
 
 **Type:** `THEOREM`  
 **Archived status:** `CLOSED_WITH_CORRECTION`  
 
-At least 2s linear field measurements are necessary to recover every s-sparse vector over the whole field. This lower bound does not automatically prove 2s optimality for a restricted bounded integer alphabet embedded in the field.
+For a linear map F^m -> F^r that uniquely recovers every s-sparse vector over the whole field,
+
+```text
+r >= min(m,2s).
+```
+
+Thus the familiar `r>=2s` lower bound is the correct branch when `m>=2s`; it is not a universal statement when the ambient dimension is smaller. This lower bound also does not automatically prove `2s` optimality for a restricted bounded integer alphabet embedded in the field.
+
+Complete proof and correction boundary: `linear-sparse-measurement-bound.md`.
 
 **Source:** `ENCIRCLEMENT-CARRY-FREE-ASSET-EXTRACTION-2026-08-05.zip!THEOREM-BANK.json`
 
@@ -187,12 +198,16 @@ For positive weights exactly encoding every {-1,0,1}-valued support-two state, t
 
 **Source:** `ENCIRCLEMENT-CARRY-FREE-ASSET-EXTRACTION-2026-08-05.zip!THEOREM-BANK.json`
 
-## 21. Optimal Linear Channel Redundancy
+## 21. Optimal Linear Channel Redundancy — Field/Length Scope Corrected
 
 **Type:** `THEOREM`  
-**Archived status:** `CLOSED_PROVED`  
+**Archived status:** `CLOSED_WITH_SCOPE_CORRECTION`  
 
-A 2s-symbol linear syndrome message needs at least 2t extra field symbols to correct t arbitrary channel errors, and at least t extra symbols to detect t errors or correct t known erasures. MDS codes attain these bounds.
+A linear code needs at least `2t` redundant field symbols to correct `t` arbitrary unknown symbol errors, and at least `t` redundant symbols to detect `t` errors or correct `t` known erasures. These are field-independent Singleton lower bounds.
+
+Equality is attained when a suitable MDS code with the required parameters exists. Reed-Solomon/generalized Reed-Solomon codes provide the standard sharp constructions over sufficiently large fields and supported lengths; unconditional attainment over every fixed field and length is **not** claimed.
+
+Complete scope note: `linear-channel-redundancy-scope.md`.
 
 **Source:** `ENCIRCLEMENT-CARRY-FREE-ASSET-EXTRACTION-2026-08-05.zip!THEOREM-BANK.json`
 
