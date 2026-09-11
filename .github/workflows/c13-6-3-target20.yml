@@ -1,0 +1,48 @@
+name: C13-6-3 target-20 exact SAT
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'covering-designs/C13-6-3/solve_c13_20_sat.py'
+      - '.github/workflows/c13-6-3-target20.yml'
+
+jobs:
+  exact-sat:
+    name: degree pattern ${{ matrix.pattern }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        pattern: [A, B, C]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PySAT
+        run: python -m pip install --upgrade pip 'python-sat'
+      - name: Solve exact case
+        shell: bash
+        run: |
+          set +e
+          python covering-designs/C13-6-3/solve_c13_20_sat.py \
+            '${{ matrix.pattern }}' \
+            --dump-cnf 'c13_pattern_${{ matrix.pattern }}.cnf' \
+            --json 'c13_pattern_${{ matrix.pattern }}.json' \
+            | tee 'c13_pattern_${{ matrix.pattern }}.log'
+          rc=${PIPESTATUS[0]}
+          echo "solver_exit_code=$rc"
+          # Convention from the solver script: 10=SAT, 20=UNSAT.
+          # Either is a completed exact result; anything else is a workflow failure.
+          if [[ "$rc" != "10" && "$rc" != "20" ]]; then exit "$rc"; fi
+      - name: Upload exact case receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: c13-target20-${{ matrix.pattern }}
+          path: |
+            c13_pattern_${{ matrix.pattern }}.json
+            c13_pattern_${{ matrix.pattern }}.log
+            c13_pattern_${{ matrix.pattern }}.cnf
+          compression-level: 9
