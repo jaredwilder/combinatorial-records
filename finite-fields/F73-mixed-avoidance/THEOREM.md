@@ -1,9 +1,11 @@
 # Simultaneously sum-free, product-free, and 3-AP-free subsets of `F_73^×`
 
 **Author:** Jared Wilder  
-**Source:** MathFire Round Ten  
-**Status:** complete finite computational classification  
+**Source:** earlier MathFire Round-Ten development packet  
+**Status:** complete finite computational classification in the preserved development packet  
 **Novelty posture:** `apparently_new_after_systematic_search` as of 2026-07-27; absolute historical novelty is not claimed.
+
+> **Version note.** This is an earlier Round-Ten campaign result, **not** the second headline theorem in the actual-final MathFire 10.0.0 ZIP. The actual-final v10 theorem is the separate two-condition `F_31^×` sum-free/product-free classification with maximum 8 and nine extremizers. Both artifacts are preserved; their provenance must not be merged.
 
 Let `A` be a subset of the nonzero elements of the prime field `F_73`. Require all three conditions:
 
@@ -55,14 +57,14 @@ The primary exact solver:
 - compiles two-vertex constraints into a compatibility graph;
 - retains three-vertex constraints as pair-conditioned exclusions;
 - performs exact branch-and-bound;
-- uses greedy coloring only as a valid upper bound;
+- uses greedy coloring as a valid upper bound;
 - enumerates the complete maximum layer.
 
-It proves maximum `12` and exactly three extremizers after `271,416` search nodes.
+The preserved packet reports maximum `12` and exactly three extremizers after `271,416` search nodes.
 
-## Independent verification
+## Independent verification recorded in the development packet
 
-The independent program `verification/mixed_field_p73_independent.cpp` shares no MathFire package code. It independently rebuilds the forbidden relations and exact search and returns the same:
+The packet records an independent program `verification/mixed_field_p73_independent.cpp` that shares no MathFire package code and independently rebuilds the forbidden relations and exact search, returning the same:
 
 - modulus `73`;
 - `7422` forbidden edges;
@@ -79,4 +81,4 @@ Recorded hashes:
 
 ## Claim boundary
 
-This is a complete theorem for the single finite ambient group `F_73^×` under the three declared constraints. It is not an asymptotic theorem for arbitrary primes or finite fields.
+This is preserved as a complete finite result of the earlier development packet. It is not an asymptotic theorem, and it is not represented as the final v10 release theorem. The final v10 F31 result lives separately in this repository.
