@@ -72,4 +72,9 @@ The recovered integration handoff identifies the original authority artifacts as
 - `receipts/schur-roth-z31-c-verifier.txt`;
 - `receipts/novelty-clearance.json`.
 
-Those exact bytes should be mirrored beside this theorem record when recovered from the source release. Until then, this page records the theorem and the source's explicit exhaustive-accounting boundary; it does not substitute a new verifier for the original independent C receipt.
+The exact mathematical source files have now been recovered in the
+[finite-field subject home](https://github.com/jaredwilder/finite-field-extremal-sets).
+Its manifest identifies the original ZIP members. A fresh Python replay
+reproduces all 330 maximizers and 12 orbits, and
+[GitHub CI](https://github.com/jaredwilder/finite-field-extremal-sets/actions/runs/34780653757)
+successfully compiles and runs the original independent C verifier.
