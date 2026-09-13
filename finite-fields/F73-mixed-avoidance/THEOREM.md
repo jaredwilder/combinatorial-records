@@ -82,3 +82,10 @@ Recorded hashes:
 ## Claim boundary
 
 This is preserved as a complete finite result of the earlier development packet. It is not an asymptotic theorem, and it is not represented as the final v10 release theorem. The final v10 F31 result lives separately in this repository.
+
+## Focused home and recovered verifiers
+
+The [finite-field extremal-set repository](https://github.com/jaredwilder/finite-field-extremal-sets)
+now provides the coherent three-case reading map, exact original verifier
+sources, full maximizing layers, provenance hashes and fresh Python/C/C++
+verification. This note remains the historical source record.
