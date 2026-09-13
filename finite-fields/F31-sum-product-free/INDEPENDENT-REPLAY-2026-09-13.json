@@ -1,0 +1,105 @@
+{
+  "prime": 31,
+  "maximum": 8,
+  "extremal_count": 9,
+  "valid_size_9_count": 0,
+  "extremizers": [
+    [
+      2,
+      3,
+      7,
+      15,
+      16,
+      24,
+      28,
+      29
+    ],
+    [
+      2,
+      3,
+      10,
+      15,
+      16,
+      21,
+      28,
+      29
+    ],
+    [
+      2,
+      3,
+      12,
+      13,
+      18,
+      19,
+      28,
+      29
+    ],
+    [
+      2,
+      5,
+      9,
+      15,
+      16,
+      22,
+      26,
+      29
+    ],
+    [
+      2,
+      5,
+      11,
+      14,
+      17,
+      20,
+      26,
+      29
+    ],
+    [
+      2,
+      6,
+      7,
+      15,
+      16,
+      24,
+      25,
+      29
+    ],
+    [
+      2,
+      6,
+      11,
+      15,
+      16,
+      20,
+      25,
+      29
+    ],
+    [
+      2,
+      9,
+      10,
+      15,
+      16,
+      21,
+      22,
+      29
+    ],
+    [
+      10,
+      12,
+      13,
+      15,
+      16,
+      18,
+      19,
+      21
+    ]
+  ],
+  "search_nodes": 2367,
+  "minimal_forbidden_edges": 558,
+  "method": "Exhaustive include/exclude enumeration with monotone forbidden-edge propagation and cardinality pruning.",
+  "elapsed_seconds": 0.06162,
+  "verifier_sha256": "810fbfcafe66e7df8dac51b73811b77151b59bf18602d09dac09174ba1102613",
+  "theorem_sha256": "4aa7bc51f1f133b18b5185c4f982e8a190528347dfcfa66633ce6b2a9ded48ad",
+  "novelty": "Not evaluated"
+}
