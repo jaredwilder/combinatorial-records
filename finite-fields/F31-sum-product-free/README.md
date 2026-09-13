@@ -20,3 +20,10 @@ Python 3.10 or later; standard library only. It reproduces all nine sets in the 
 Each permitted subset is covered by the include/exclude branching, and propagation excludes only completions that would violate an explicit equation. Therefore the reported maximum is an upper bound as well as a witnessed lower bound. The nine printed sets are compared with the exact source theorem.
 
 This verification supports the finite theorem over F31. Historical novelty and extensions to other fields are separate questions.
+
+## Focused home and recovered verifiers
+
+The [finite-field extremal-set repository](https://github.com/jaredwilder/finite-field-extremal-sets)
+now provides the coherent three-case reading map, exact original verifier
+sources, full maximizing layers, provenance hashes and fresh Python/C/C++
+verification. This note remains the historical source record.
