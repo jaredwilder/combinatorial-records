@@ -6,6 +6,19 @@ Author: Jared Wilder. First public timestamp: 2026-09-10.
 
 This repository is the canonical home for compact finite/combinatorial results that do not yet need a dedicated repository of their own. The directory tree is the authoritative inventory; this README highlights the main mathematics.
 
+## Focused homes with recovered original verifiers
+
+- [Finite-field extremal sets](https://github.com/jaredwilder/finite-field-extremal-sets)
+  brings the three F31/Z31/F73 classifications together with their recovered
+  original C/C++ sources, all maximizing sets, a fresh Python replay and
+  successful compiled-verifier CI. This is now their preferred subject home.
+- [SQS(20) P15 source and replay](https://github.com/jaredwilder/erdos835-lean-audit#exact-source-package-and-fresh-replay)
+  contains the exact 15-system pack and the 25-file original package, with
+  all rigidity and pair-trade checks replayed. The #835 home retains the
+  distinction between this finite design program and its Lean audit.
+
+The notes below remain historical public records and point to these homes.
+
 ## Contents at a glance
 
 | directory / file | contents |
