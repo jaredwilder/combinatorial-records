@@ -100,3 +100,10 @@ The theorem certificate hash is
 ## Claim boundary
 
 This is an exact theorem for the single cyclic group `Z/31Z`. It is not an asymptotic theorem for general cyclic groups or prime moduli.
+
+## Focused home and recovered verifiers
+
+The [finite-field extremal-set repository](https://github.com/jaredwilder/finite-field-extremal-sets)
+now provides the coherent three-case reading map, exact original verifier
+sources, full maximizing layers, provenance hashes and fresh Python/C/C++
+verification. This note remains the historical source record.
