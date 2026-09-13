@@ -97,3 +97,10 @@ and inside MathFire release material. The mathematical statement is independent 
 ## Scope boundary
 
 This does not establish an asymptotic theorem or a formula for arbitrary primes `p`. The exact theorem is the complete `p=73` classification under the three stated constraints.
+
+## Focused home and recovered verifiers
+
+The [finite-field extremal-set repository](https://github.com/jaredwilder/finite-field-extremal-sets)
+now provides the coherent three-case reading map, exact original verifier
+sources, full maximizing layers, provenance hashes and fresh Python/C/C++
+verification. This note remains the historical source record.
