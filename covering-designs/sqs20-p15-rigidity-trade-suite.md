@@ -188,7 +188,13 @@ The source Library contains the human theorem records and references an exact pa
 - pair-trade profile enumeration;
 - residual-graph / repair-radius calculations.
 
-At the time of this publication note, those complete machine-readable package bytes have **not yet been mirrored into this repository**. Therefore this page publishes the exact theorem statements and certificate accounting, but the final reproducibility state remains **SOURCE PACKAGE RECOVERY / MIRROR OPEN** until those bytes are added and replayed from the public branch.
+The complete 25-file source package has now been recovered and published in
+the [Erdős #835 subject home](https://github.com/jaredwilder/erdos835-lean-audit#exact-source-package-and-fresh-replay).
+The exact P15, original verifiers and historical receipts are present with
+ZIP provenance and file hashes. A fresh replay checks all 15 rigidity systems,
+all 105 pair profiles, the spectral-incidence identity and an independent
+reconstruction of the four residual K5 obstructions. The original
+source-package recovery gap is resolved for this v0.7 package.
 
 ## Provenance
 
