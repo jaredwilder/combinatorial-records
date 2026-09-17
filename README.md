@@ -1,136 +1,132 @@
 # Combinatorial records
 
-Verified computations, classifications, witnesses, and theorem collections across Sidon sets, covering designs, covering systems, Ramsey theory, hereditary families, Lonely Runner, finite-field avoidance, automata, multiplicative avoidance, and additive encodings.
+Exact finite classifications, witnesses, and structural results in covering designs, Ramsey theory, Sidon sets, finite fields, hereditary families, covering systems, automata, and additive encodings.
 
-Author: Jared Wilder. First public timestamp: 2026-09-10.
+## Highlights
 
-This repository is the canonical home for compact finite/combinatorial results that do not yet need a dedicated repository of their own. The directory tree is the authoritative inventory; this README highlights the main mathematics.
-
-## Focused homes with recovered original verifiers
-
-- [Finite-field extremal sets](https://github.com/jaredwilder/finite-field-extremal-sets)
-  brings the three F31/Z31/F73 classifications together with their recovered
-  original C/C++ sources, all maximizing sets, a fresh Python replay and
-  successful compiled-verifier CI. This is now their preferred subject home.
-- [SQS(20) P15 source and replay](https://github.com/jaredwilder/erdos835-lean-audit#exact-source-package-and-fresh-replay)
-  contains the exact 15-system pack and the 25-file original package, with
-  all rigidity and pair-trade checks replayed. The #835 home retains the
-  distinction between this finite design program and its Lean audit.
-
-The notes below remain historical public records and point to these homes.
-
-## Contents at a glance
-
-| directory / file | contents |
+| subject | result |
 |---|---|
-| [`erdos701-hereditary-rank2-star.md`](erdos701-hereditary-rank2-star.md) | **Exact rank-2 hereditary Chvátal theorem:** for every finite hereditary family of rank at most two, the maximum intersecting subfamily has size exactly the largest star. |
-| `lonely-runner/` | **Lonely Runner at 13 effective speeds:** a 42-entry theorem collection. The strongest completed subproblem covers the large-prime canonical class `p>2366`; the remaining 13-speed cases are recorded separately. |
-| `ramsey-r55/` | `R(5,5)` structural work, including **untouched-base extension lemmas** for adding one vertex to an existing `(5,5)`-Ramsey colouring. |
-| `ramsey/` | Restricted Ramsey-family results, including complete circulant searches for `R(3,10)` at `n=40` and `R(4,6)` at `n=36`, plus the **conference-switching impossibility theorem** for the corresponding Ramsey-book construction class. |
-| `covering-systems/` | Exact finite covering-system results, including the **seven-modulus Erdős–Selfridge odd-covering obstruction** for `{3,5,7,9,11,13,15}`. |
-| `sidon/` | **`f(7) >= 24`** for binary Sidon sets, with an executable verifier. |
-| `covering/`, `covering-designs/` | **677 verified covering-number rows**, monotonicity checks, `C(13,6,3)` 21-block witnesses, and structural restrictions on any hypothetical 20-cover. |
-| `erdos500/` | Deletion-density and inheritance lemmas with an indexed theorem collection. |
-| `finite-fields/` | Three **complete finite classifications**: simultaneous sum/product/3-AP avoidance in `F_73^×`, simultaneous sum/product avoidance in `F_31^×`, and sum-free + nontrivial-3-AP-free subsets of `Z/31Z`. |
-| `multiplicative/product-gp-free-50/` | **Exact finite extremal classification** for product-free and nontrivial-geometric-progression-free subsets of `[50]`. |
-| `automata/` | Finite transducer monoids, quotients, robustness bounds, and an abstract Lean identity index. |
-| `additive-encodings/` | Additive-encoding theorems and constructions. |
-| `witness-vault/` | **21 concrete witness objects** independently rechecked for the public release. |
-| `twin-primes/` | Conditional Type I / Type II reductions identifying the two analytic inputs needed for that route to the twin-prime asymptotic. |
-| `findings/` | Individual result notes, including the Sidon computations from `n=128` through `n=1000`. |
+| Rank-2 hereditary families | exact Chvátal theorem: the largest intersecting subfamily equals the largest star |
+| Binary Sidon sets | explicit 24-element Sidon subset of `{0,1}^7` |
+| Covering numbers | 677 verified `C(v,k,t)` rows in the stated finite range |
+| Ramsey circulants | complete elimination of the tested `R(3,10)` order-40 and `R(4,6)` order-36 circulant families |
+| Conference switching | impossibility theorem for the symmetric conference Ramsey-book construction class |
+| Covering systems | exact seven-modulus obstruction for `{3,5,7,9,11,13,15}` |
+| Finite fields | exact extremal classifications in `F_31^×`, `Z/31Z`, and `F_73^×` |
+| Product/GP avoidance | exact extremal classification on `[50]` |
+| Lonely Runner | theorem collection around the 13-effective-speed problem |
+| Automata | finite transition monoids, quotients, and robustness identities |
 
-## How to read the different result types
-
-The repository contains several ordinary mathematical categories:
-
-- **exact finite classification / optimum** — exhaustive computation establishes the stated finite result;
-- **witness / lower bound** — an explicit object proves an existential statement or lower bound;
-- **restricted-family exhaustion** — every object in a stated construction family has been checked;
-- **theorem / structural lemma** — an ordinary mathematical statement with its stated hypotheses;
-- **conditional reduction** — the conclusion follows once the named hypotheses are supplied;
-- **literature status** — historical novelty is recorded separately from mathematical correctness.
-
-Some historical files retain internal labels for provenance. Public summaries translate those labels into ordinary mathematical language.
-
-## 1. Rank-2 hereditary Chvátal theorem
+## Rank-2 hereditary Chvátal theorem
 
 For every finite hereditary family `F` whose members have size at most two,
 
-`m(F)=Δ(F)`,
+\[
+\boxed{m(F)=\Delta(F)},
+\]
 
-where `m(F)` is the largest size of a pairwise-intersecting subfamily and `Δ(F)` is the largest full star. The complete proof is in [`erdos701-hereditary-rank2-star.md`](erdos701-hereditary-rank2-star.md).
+where `m(F)` is the maximum size of a pairwise-intersecting subfamily and `Δ(F)` is the largest full star.
 
-## 2. Binary Sidon sets: `f(7) >= 24`
+The complete proof is [`erdos701-hereditary-rank2-star.md`](erdos701-hereditary-rank2-star.md).
 
-`sidon/` contains a 24-vector subset of `{0,1}^7` whose 300 pairwise sums are all distinct (OEIS A309370). Run
+## Binary Sidon witness
+
+`sidon/` contains a 24-vector subset of `{0,1}^7` with all unordered pair sums distinct.
 
 ```bash
 python sidon/verify_sidon_d7_24.py
 ```
 
-to check the witness. The result was also independently recomputed during the release.
+The broader `f(7)` interval and exact search are now presented in [`binary-sidon-f7`](https://github.com/jaredwilder/binary-sidon-f7).
 
-## 3. Covering numbers and two strict Schoenheim separations
+## Covering designs
 
-`covering/covering-firehose.jsonl` contains 677 verified `C(v,k,t)` rows over
+`covering/covering-firehose.jsonl` contains 677 verified covering-number rows over
 
 ```text
-v in [5,35], k in [2,34], t in [1,6].
+v in [5,35]
+k in [2,34]
+t in [1,6].
 ```
 
-`covering/covering-bounds.json` checks the expected monotonicity relations with zero violations.
+Two exact lower-bound separations in the finite data are
 
-A recount corrected an earlier underclaim: twelve UNSAT rows cover **two parameter triples** whose true covering number is strictly above the Schoenheim general lower bound:
+\[
+C(7,4,2)\ge5
+\]
 
-| v | k | t | Schoenheim | computation proves |
-|---|---|---|---:|---|
-| 7 | 4 | 2 | 4 | `C(7,4,2) >= 5` |
-| 7 | 4 | 3 | 11 | `C(7,4,3) >= 12` |
+against the Schoenheim bound 4, and
 
-Whether either inequality improves the best published table is a separate literature question.
+\[
+C(7,4,3)\ge12
+\]
 
-## 4. Circulant Ramsey-family exhaustions
+against the Schoenheim bound 11.
 
-`ramsey/circulant-ramsey-exhaustion.json` checks:
+The `C(13,6,3)` program has its own repository: [`covering-13-6-3`](https://github.com/jaredwilder/covering-13-6-3).
 
-- **1,048,575** circulant families for the `R(3,10)` condition at `n=40`, with zero witnesses;
-- **262,143** circulant families for the `R(4,6)` condition at `n=36`, with zero witnesses.
+## Ramsey construction classes
 
-Small known cases confirm that the implementation can both accept and reject examples correctly.
+The circulant search checks:
 
-The result is the complete elimination of those **circulant construction families** at those orders.
+- **1,048,575** order-40 circulant families for the `R(3,10)` condition, with no witness;
+- **262,143** order-36 circulant families for the `R(4,6)` condition, with no witness.
 
-## 5. Conference-switching Ramsey-book elimination
+These are complete eliminations of those construction families at those orders.
 
-`ramsey/conference-switching-book-elimination.md` records a construction-class theorem: for `N=4m+2`, arbitrary diagonal switching of a symmetric conference-matrix construction cannot produce a graph avoiding `B_m` whose complement avoids `B_(m+1)`.
+The conference-switching note proves that for `N=4m+2`, diagonal switching of the symmetric conference construction cannot simultaneously avoid the corresponding `B_m` and complementary `B_(m+1)` books.
 
-At the campaign instance `N=398`, this rules out the entire switched symmetric-conference class for the `B_99 / B_100` target. It is a construction-class impossibility theorem, not a global Ramsey-book nonexistence result.
+A cleaner combined presentation is in [`ramsey-construction-class-eliminations`](https://github.com/jaredwilder/ramsey-construction-class-eliminations).
 
-## 6. Erdős–Selfridge seven-modulus obstruction
+## Seven-modulus covering obstruction
 
-`covering-systems/erdos-selfridge-odd-seven-moduli.md` records the exact finite statement that no choice of one residue class for each modulus in
+No choice of one residue class for each modulus in
 
-`{3,5,7,9,11,13,15}`
+\[
+\{3,5,7,9,11,13,15\}
+\]
 
-covers all integers. Modulo their lcm this is a finite exact obstruction on 45,045 residue classes. The density sum exceeds one, so elementary density alone does not eliminate the family.
+covers all integers.
 
-The estate records independent CP-SAT and PySAT certification; recovery of the original solver/certificate files remains a provenance task.
+Modulo the least common multiple, this is an exact finite obstruction on 45,045 residue classes. The density sum exceeds one, so simple density alone cannot prove the result.
 
-## 7. Sidon/C3 divergence at `n=35`
+## Finite-field classifications
 
-One computation found that for `n<=34`, the maximum Sidon-set size agrees with the maximum under an additional C3-permutation-free constraint, while at **`n=35`** the recorded values separate as `8` versus `7`.
+Three complete finite classifications are collected under `finite-fields/`:
 
-The original record did not preserve the exact C3 variant used in that comparison. The numerical calculation is therefore retained, while the comparison statement awaits reconstruction of that missing definition.
+- simultaneous sum/product avoidance in `F_31^×`;
+- sum-free and nontrivial-3-AP-free subsets of `Z/31Z`;
+- simultaneous sum/product/nontrivial-3-AP avoidance in `F_73^×`.
 
-## 8. Twin-prime conditional reductions
+The full maximizing layers and independent compiled verifiers are now in [`finite-field-extremal-sets`](https://github.com/jaredwilder/finite-field-extremal-sets).
 
-`twin-primes/` develops Type I and Type II sufficiency conditions for the twin-prime asymptotic using a Heath-Brown decomposition. It isolates two analytic inputs that are not supplied in the repository:
+## Other directories
 
-- Type I distribution at level `1-ε` over unrestricted moduli;
-- a nontrivial Type II bilinear bound at `M~N~x^(1/2)`.
+| path | contents |
+|---|---|
+| `lonely-runner/` | finite and structural work for 13 effective speeds |
+| `ramsey-r55/` | 41-vertex `(5,5)` Ramsey structure and extension lemmas |
+| `covering/`, `covering-designs/` | covering-number tables, witnesses, and structural restrictions |
+| `erdos500/` | Turán `(3,4)` deletion/inheritance material |
+| `multiplicative/product-gp-free-50/` | exact product/GP-free classification on `[50]` |
+| `automata/` | finite transition monoids and quotient calculations |
+| `additive-encodings/` | additive-encoding constructions and theorems |
+| `witness-vault/` | concrete finite witness objects |
+| `twin-primes/` | conditional Type I / Type II reductions |
+| `findings/` | individual finite result notes |
 
-The mathematical contribution is the explicit reduction and identification of those missing analytic estimates, together with corrections to earlier versions of the derivation.
+## Focused subject repositories
 
-## License
+Several large subjects originally stored here now have dedicated reading surfaces:
 
-Apache-2.0.
+- [`finite-field-extremal-sets`](https://github.com/jaredwilder/finite-field-extremal-sets)
+- [`binary-sidon-f7`](https://github.com/jaredwilder/binary-sidon-f7)
+- [`covering-13-6-3`](https://github.com/jaredwilder/covering-13-6-3)
+- [`ramsey-r55-circulant-41`](https://github.com/jaredwilder/ramsey-r55-circulant-41)
+- [`ramsey-construction-class-eliminations`](https://github.com/jaredwilder/ramsey-construction-class-eliminations)
+- [`lonely-runner-13`](https://github.com/jaredwilder/lonely-runner-13)
+- [`three-resource-transition-monoid`](https://github.com/jaredwilder/three-resource-transition-monoid)
+
+This repository remains the compact cross-subject collection and source archive for the smaller results.
+
+Author: Jared Wilder. License: Apache-2.0.
